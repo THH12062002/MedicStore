@@ -1,0 +1,325 @@
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\admin\source\repos\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.sourcelink.json
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\New folder\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\PTPMUD\test\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.exe
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll.config
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.deps.json
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.runtimeconfig.json
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\Guna.UI2.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\System.Management.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\WinForms.DataVisualization.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.AssemblyReference.cache
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.formAdmin.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_AddUser.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Dashboard.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_Profile.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Admin.UC_ViewUser.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.form_Login.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Properties.Resources.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.formUser.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_AddMedicine.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_BusinessStatistics.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_Dashboard.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_MedicineVlyCheck.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ModifyMedicine.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_SellMedicine.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.US_ViewMedicine.resources
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.GenerateResource.cache
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfoInputs.cache
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.AssemblyInfo.cs
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CoreCompileInputs.cache
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.csproj.CopyComplete
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\QuanLyTiemThuoc.dll
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
+D:\PTPMUD\MinhLe\Đồ án Phát triển Phần mềm Ứng dụng\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTi.D5921909.Up2Date
