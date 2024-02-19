@@ -2,14 +2,18 @@
 using QuanLyTiemThuoc.DTO;
 using Guna.UI2.WinForms;
 using System.Text;
+using System.Xml.Linq;
+using System;
 
 namespace QuanLyTiemThuoc.Users
 {
     public partial class US_SellMedicine : UserControl
     {
+        /*public int userId{ get; set; }*/
         private SaleDetailBUS saleDetailBUS;
         private MedicBUS medicBUS;
         private SaleDTO saleDTO;
+        private DiscountBUS discountBUS;
         private SaleDetailDTO saleDetailDTO;
         private DiscountDTO discountDTO;
         private CategoryBUS categoryBUS;
@@ -21,6 +25,7 @@ namespace QuanLyTiemThuoc.Users
             InitializeComponent();
             medicBUS = new MedicBUS();
             categoryBUS = new CategoryBUS();
+            discountBUS = new DiscountBUS();
             saleDTO = new SaleDTO();
             saleDetailBUS = new SaleDetailBUS();
             saleDetailDTO = new SaleDetailDTO();
@@ -30,6 +35,8 @@ namespace QuanLyTiemThuoc.Users
             txtQuantity.TextChanged += UpdateTotalPrice;
             txtDiscountPercentage.TextChanged += UpdateTotalPrice;
         }
+       
+
         private void PopulateTreeView()
         {
             List<CategoryDTO> categories = categoryBUS.GetAllCategories();
@@ -110,7 +117,6 @@ namespace QuanLyTiemThuoc.Users
         {
             if (!string.IsNullOrEmpty(txtMedicineID.Text) && !string.IsNullOrEmpty(txtMedicineName.Text))
             {
-                // Lấy thông tin từ TextBox và các control khác
                 string medicineId = txtMedicineID.Text;
                 string name = txtMedicineName.Text;
                 DateTime expirationDate = txtExpirationDate.Value;
@@ -120,120 +126,84 @@ namespace QuanLyTiemThuoc.Users
                     int.TryParse(txtQuantity.Text, out int quantity) &&
                     decimal.TryParse(txtDiscountPercentage.Text, out decimal discountPercentage))
                 {
-                    bool medicineExists = false;
-                    foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+                    // Kiểm tra xem thuốc đã tồn tại trong giỏ hàng hay chưa
+                    bool medicineExists = cartItems.Any(item => item.MedicId == medicineId);
+
+                    if (medicineExists)
                     {
-                        if (row.Cells["MedicineID"].Value != null && row.Cells["MedicineID"].Value.ToString() == medicineId)
-                        {
-                            medicineExists = true;
-                            break;
-                        }
+                        // Thuốc đã tồn tại trong giỏ hàng, cập nhật quantity
+                        var existingMedicine = cartItems.First(item => item.MedicId == medicineId);
+                        existingMedicine.Quantity += quantity;
+
+                        // Cập nhật quantity trong DataGridView
+                        UpdateDataGridViewRow(existingMedicine);
                     }
-
-                    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thêm thuốc này vào giỏ hàng không?", "Xác nhận thêm vào giỏ hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if (result == DialogResult.Yes)
+                    else
                     {
-                        // Tạo các đối tượng DTO
-                        MedicDTO medicDTO = new MedicDTO
+                        // Thuốc chưa tồn tại trong giỏ hàng, thêm mới vào giỏ hàng và DataGridView
+                        MedicDTO newMedicDTO = new MedicDTO
                         {
-                            MedicId = txtMedicineID.Text,
-                            MName = txtMedicineName.Text,
-                            EDate = txtExpirationDate.Value,
-                            PerUnit = long.Parse(txtUnitPrice.Text),
-                        };
+                            MedicId = medicineId,
+                            MName = name,
+                            EDate = expirationDate,
+                            PerUnit = unitPrice,
+                            Quantity = quantity,
 
-                        SaleDTO saleDTO = new SaleDTO
-                        {
-                            SaleDate = DateTime.Now,
-                            TotalAmount = CalculateTotalAmount()
+                            // Các thuộc tính khác của MedicDTO
                         };
-
                         DiscountDTO discountDTO = new DiscountDTO
                         {
-                            DiscountCode = txtDiscountCode.Text,
-                            DiscountPercentage = decimal.Parse(txtDiscountPercentage.Text),
+                            DiscountCode = discountCode,
+                            DiscountPercentage = discountPercentage
                         };
 
-                        // Tạo danh sách SaleDetailDTO từ DataGridView
-                        List<SaleDetailDTO> saleDetailsList = new List<SaleDetailDTO>();
+                        cartItems.Add(newMedicDTO);
 
-                        foreach (DataGridViewRow row in guna2DataGridView1.Rows)
-                        {
-                            SaleDetailDTO saleDetailDTO = new SaleDetailDTO
-                            {
-                                // Điền thông tin từ DataGridView vào SaleDetailDTO
-                                SaleID = 1,
-                                MedicineID = Convert.ToInt32(row.Cells["MedicineID"].Value),
-                                QuantitySold = Convert.ToInt32(row.Cells["Quantity"].Value),
-                                SalePrice = Convert.ToDecimal(row.Cells["TotalPrice"].Value),
-                                DiscountID = 1
-                    };
-
-                            saleDetailsList.Add(saleDetailDTO);
-                        }
-
-                        bool success = saleDetailBUS.AddSaleDetails(saleDetailsList);
-
-                        if (success)
-                        {
-                            MessageBox.Show("Thêm vào cơ sở dữ liệu thành công.", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Có lỗi khi thêm vào cơ sở dữ liệu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            // Xử lý lỗi nếu cần
-                        }
-
-                        if (medicineExists)
-                        {
-                            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
-                            {
-                                if (row.Cells["MedicineID"].Value != null && row.Cells["MedicineID"].Value.ToString() == medicineId)
-                                {
-                                    row.Cells["Quantity"].Value = Convert.ToInt64(row.Cells["Quantity"].Value) + quantity;
-
-                                    decimal totalPrice = CalculateTotalPrice(unitPrice, Convert.ToInt64(row.Cells["Quantity"].Value), discountPercentage);
-                                    row.Cells["TotalPrice"].Value = totalPrice;
-
-                                    break;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            // Thêm dữ liệu vào DataGridView
-                            guna2DataGridView1.Rows.Add(
-                                medicDTO.MedicId,
-                                medicDTO.MName,
-                                medicDTO.EDate,
-                                medicDTO.PerUnit,
-                                saleDetailDTO.QuantitySold,
-                                discountDTO.DiscountCode,
-                                discountDTO.DiscountPercentage,
-                                saleDetailDTO.SalePrice
-                            );
-                        }
-
-                        // Xóa thông tin từ các TextBox sau khi thêm vào DataGridView
-                        ClearTextBoxes();
+                        // Thêm thông tin vào DataGridView
+                        guna2DataGridView1.Rows.Add(
+                            newMedicDTO.MedicId,
+                            newMedicDTO.MName,
+                            newMedicDTO.EDate,
+                            newMedicDTO.PerUnit,
+                            newMedicDTO.Quantity,
+                            discountDTO.DiscountCode,
+                            discountDTO.DiscountPercentage,
+                            CalculateTotalPrice(newMedicDTO.PerUnit, newMedicDTO.Quantity, discountDTO.DiscountPercentage)
+                        );
 
                         // Cập nhật lblTotal sau khi thêm vào DataGridView
                         decimal totalAmount = CalculateTotalAmount();
                         lblTotal.Text = $"Total Amount: {totalAmount:C}";
+
+                        // Xóa thông tin từ các TextBox sau khi thêm vào DataGridView
+                        ClearTextBoxes();
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Vui lòng nhập các giá trị số hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn một thuốc từ danh sách trước khi thêm vào giỏ hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
+        private void UpdateDataGridViewRow(MedicDTO existingMedicine)
+        {
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                if (row.Cells["MedicineID"].Value != null && row.Cells["MedicineID"].Value.ToString() == existingMedicine.MedicId)
+                {
+                    // Cập nhật quantity trong DataGridView
+                    row.Cells["Quantity"].Value = existingMedicine.Quantity;
+
+                    // Cập nhật total price
+                    row.Cells["TotalPrice"].Value = CalculateTotalPrice(existingMedicine.PerUnit, existingMedicine.Quantity, discountDTO.DiscountPercentage);
+
+                    // Cập nhật lblTotal sau khi thêm vào DataGridView
+                    decimal totalAmount = CalculateTotalAmount();
+                    lblTotal.Text = $"Total Amount: {totalAmount:C}";
+
+                    // Xóa thông tin từ các TextBox sau khi thêm vào DataGridView
+                    ClearTextBoxes();
+                    return;
+                }
+            }
+        }
 
 
         private void ClearTextBoxes()
@@ -291,7 +261,7 @@ namespace QuanLyTiemThuoc.Users
                     txtMedicineID.Text = selectedMedicine.MedicId;
                     txtMedicineName.Text = selectedMedicine.MName;
                     txtExpirationDate.Value = selectedMedicine.EDate;
-                    txtQuantity.Text = selectedMedicine.Quantity.ToString();
+                    txtQuantity.Text = "0";
                     txtUnitPrice.Text = selectedMedicine.PerUnit.ToString();
                     txtDiscountPercentage.Text = "0";
                 }
@@ -327,6 +297,8 @@ namespace QuanLyTiemThuoc.Users
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
+
+
             if (cartItems.Count > 0)
             {
                 StringBuilder receipt = new StringBuilder();
@@ -351,6 +323,104 @@ namespace QuanLyTiemThuoc.Users
             {
                 MessageBox.Show("Giỏ hàng trống. Vui lòng thêm thuốc vào giỏ hàng trước khi thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void txtDiscountCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiscountPercentage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtQuantity_TextChanged(object sender, EventArgs e)
+        {
+            long.TryParse(txtUnitPrice.Text, out long unitPrice);
+            int.TryParse(txtQuantity.Text, out int quantity);
+            decimal totalPrice = CalculateTotalPrice(unitPrice, quantity, 0);
+            List<DiscountDTO> discountList = discountBUS.GetDiscountsBelowTotalSaleAmount(totalPrice);
+                if (discountList != null && discountList.Count > 0)
+                {
+
+                    // Use the first discount from the list
+                    DiscountDTO firstDiscount = discountList[0];
+                if (firstDiscount != null && firstDiscount.EndDate < DateTime.Now)
+                {
+                    MessageBox.Show("Mã giảm giá đã hết hạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else 
+                {
+                    // Populate the corresponding fields with discount information
+                    txtDiscountCode.Text = firstDiscount.DiscountCode;
+                    txtDiscountPercentage.Text = firstDiscount.DiscountPercentage.ToString();
+
+                    // Additional information, replace with your actual controls
+                    // txtStartDate.Text = firstDiscount.StartDate.ToString();
+                    // txtEndDate.Text = firstDiscount.EndDate.ToString();
+                }
+
+            }
+                else
+                {
+                    // No discounts found, continue with the program
+                    // Clear discount-related fields if needed
+                    txtDiscountCode.Text = string.Empty;
+                    txtDiscountPercentage.Text = "0";
+                    // Clear additional information fields if needed
+                    // txtStartDate.Text = string.Empty;
+                    // txtEndDate.Text = string.Empty;
+                }
+
+            
+        }
+
+        private void txtUnitPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string discountCode = txtDiscountCode.Text;
+            DiscountDTO discountList = discountBUS.GetDiscountByCode(discountCode);
+            long.TryParse(txtUnitPrice.Text, out long unitPrice);
+            int.TryParse(txtQuantity.Text, out int quantity);
+            decimal totalPrice = CalculateTotalPrice(unitPrice, quantity, 0);
+            if (string.IsNullOrEmpty(discountCode))
+            {
+                // Handle the case where discountCode is null or empty
+                MessageBox.Show("Mã giảm giá không hợp lệ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (totalPrice >= discountList.TotalSaleAmount)
+            {
+
+                // Kiểm tra hiệu lực của mã giảm giá
+                if (discountList != null && discountList.EndDate < DateTime.Now)
+                {
+                    MessageBox.Show("Mã giảm giá đã hết hạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                decimal discountPercentage = discountList?.DiscountPercentage ?? 0;
+
+                // Hiển thị thông tin giảm giá
+                txtDiscountPercentage.Text = discountPercentage.ToString();
+                txtTotalPrice.Text = CalculateTotalPrice(unitPrice, quantity, discountPercentage).ToString("C");
+            }
+            else
+            {
+                MessageBox.Show("Giá trị không đủ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtTotalPrice_TextChanged(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

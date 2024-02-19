@@ -15,7 +15,7 @@ namespace QuanLyTiemThuoc
         public SqlDataAccessHelper()
         {
             myAdapter = new SqlDataAdapter();
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["QuanLyTiemThuoc.Properties.Settings.Setting"].ConnectionString);
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["QuanLyTiemThuoc.Properties.Settings.MayTruong"].ConnectionString);
             /*conn = new SqlConnection(ConfigurationManager.ConnectionStrings["QuanLyTiemThuoc.Properties.Settings.Setting1"].ConnectionString);*/
         }
 
