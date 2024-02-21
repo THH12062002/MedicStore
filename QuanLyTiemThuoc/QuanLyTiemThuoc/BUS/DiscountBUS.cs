@@ -39,6 +39,21 @@ namespace QuanLyTiemThuoc.BUS
                 throw;
             }
         }
+        public int GetDiscountIDByCode(string discountCode)
+        {
+            try
+            {
+                // Gọi phương thức tương ứng từ DAO để lấy DiscountID
+                return discountDAO.GetDiscountIDByCode(discountCode);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in DiscountBUS.GetDiscountIDByCode: {ex.Message}");
+                // Xử lý ngoại lệ ở đây nếu cần
+                // Bạn có thể chọn trả về -1 hoặc ném một ngoại lệ khác tùy thuộc vào yêu cầu của bạn
+                throw; // Hoặc trả về -1 nếu bạn không muốn ném ngoại lệ
+            }
+        }
         // Thêm các phương thức khác nếu cần
     }
 }

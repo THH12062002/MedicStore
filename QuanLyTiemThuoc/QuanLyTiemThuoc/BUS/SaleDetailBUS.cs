@@ -26,16 +26,17 @@ namespace QuanLyTiemThuoc.BUS
                 return new List<SaleDetailDTO>();
             }
         }
-
-        public bool AddSaleDetails(List<SaleDetailDTO> saleDetail)
+        public bool AddSaleDetail(int saleID, int medicineID, int quantitySold, decimal salePrice, int discountID)
         {
             try
             {
-                return saleDetailDAO.AddSaleDetails(saleDetail);
+                // Gọi hàm tương ứng trong DAO để thêm SaleDetail vào cơ sở dữ liệu
+                return saleDetailDAO.AddSaleDetail(saleID, medicineID, quantitySold, salePrice, discountID);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in AddSaleDetail - SaleDetailBUS: {ex.Message}");
+                Console.WriteLine($"Error adding sale detail: {ex.Message}");
+                // Xử lý exception tại đây nếu cần
                 return false;
             }
         }

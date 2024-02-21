@@ -56,7 +56,7 @@ namespace QuanLyTiemThuoc
                     else if (usersDTO.UserRole.Equals("Pharmacist", StringComparison.OrdinalIgnoreCase))
                     {
                         // Nếu vai trò là user, hiển thị formUser
-                        formUser formUser = new formUser(usersDTO.Name);
+                        formUser formUser = new formUser(usersDTO.Name, usersDTO.Id);
                         formUser.Show();
                         this.Hide();
                     }

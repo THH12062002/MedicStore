@@ -8,6 +8,7 @@ namespace QuanLyTiemThuoc.Users
         private MedicBUS medicBUS;
         private BatchBUS batchBUS;
         private CategoryBUS categoryBUS;
+        private DateTime inputDate = DateTime.Now;
         public US_AddMedicine()
         {
             InitializeComponent();
@@ -73,7 +74,7 @@ namespace QuanLyTiemThuoc.Users
             {
                 string categoryName = txtCategory.Text;
                 int categoryId = categoryBUS.GetCategoryId(categoryName);
-                string batchCode = batchBUS.GetBatchCode(batchNumber);
+                string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
                 int batchId = batchBUS.GetBatchId(batchCode);
                 string categoryToM = categoryBUS.GetCategoryToM(categoryName);
                 string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
@@ -113,7 +114,7 @@ namespace QuanLyTiemThuoc.Users
                 {
                     string categoryName = txtCategory.Text;
                     int categoryId = categoryBUS.GetCategoryId(categoryName);
-                    string batchCode = batchBUS.GetBatchCode(batchNumber);
+                    string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
                     int batchId = batchBUS.GetBatchId(batchCode);
                     string categoryToM = categoryBUS.GetCategoryToM(categoryName);
                     string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
@@ -152,8 +153,6 @@ namespace QuanLyTiemThuoc.Users
                     MessageBox.Show("Lỗi khi thêm số lô hàng!");
                 }
             }
-
-
         }
 
         private void btnReset_Click_1(object sender, EventArgs e)
@@ -179,7 +178,7 @@ namespace QuanLyTiemThuoc.Users
             // Xử lý khi batchNumber chưa được gán giá trị
             if (batchNumber > 0)
             {
-                string batchCode = batchBUS.GetBatchCode(batchNumber);
+                string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
                 string categoryToM = categoryBUS.GetCategoryToM(categoryName);
                 string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
 
@@ -195,19 +194,19 @@ namespace QuanLyTiemThuoc.Users
             if (int.TryParse(txtBatch.Text, out batchNumber))
             {
                 string categoryName = txtCategory.Text;
-                string batchCode = batchBUS.GetBatchCode(batchNumber);
+                string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
                 string categoryToM = categoryBUS.GetCategoryToM(categoryName);
                 string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
                 txtMedicineID.Text = medicineID;
                 // Giá trị đã được chuyển đổi thành công, sử dụng batchNumber ở đây
             }
-                
 
-                // Hiện lên Text MedicineID
-               
-            }
+
+            // Hiện lên Text MedicineID
 
         }
+
+    }
 
     }
 

@@ -41,7 +41,22 @@ namespace QuanLyTiemThuoc.DAO
 
             return medics;
         }
+        public int GetId(string medicID)
+        {
+            int id = 0;
+            string getIDQuery = "SELECT Id FROM Medic WHERE MedicID = @MedicID";
 
+            SqlParameter[] parameters = { new SqlParameter("@MedicID", medicID) };
+
+            DataTable dataTable = dataAccessHelper.ExecuteSelectQuery(getIDQuery, parameters);
+
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                id = Convert.ToInt32(dataTable.Rows[0]["Id"]);
+            }
+
+            return id;
+        }
         public int CountExpiredMedic()
         {
             int count = 0;
@@ -327,7 +342,56 @@ namespace QuanLyTiemThuoc.DAO
             }
         }
 
+        public bool SellMedic(string medicId, int soldQuantity)
+        {
+            try
+            {
+                // Kiểm tra xem thuốc có tồn tại trong cơ sở dữ liệu không
+                string checkExistenceQuery = "SELECT Quantity FROM Medic WHERE MedicId = @MedicId";
+                SqlParameter[] checkExistenceParams = { new SqlParameter("@MedicId", medicId) };
+                DataTable existenceTable = dataAccessHelper.ExecuteSelectQuery(checkExistenceQuery, checkExistenceParams);
 
+                if (existenceTable != null && existenceTable.Rows.Count > 0)
+                {
+                    // Lấy số lượng hiện tại của thuốc
+                    int currentQuantity = Convert.ToInt32(existenceTable.Rows[0]["Quantity"]);
+
+                    // Kiểm tra xem có đủ số lượng để bán hay không
+                    if (currentQuantity >= soldQuantity)
+                    {
+                        // Trừ số lượng đã bán từ số lượng hiện tại
+                        int updatedQuantity = currentQuantity - soldQuantity;
+
+                        // Cập nhật số lượng trong cơ sở dữ liệu
+                        string updateQuantityQuery = "UPDATE Medic SET Quantity = @UpdatedQuantity WHERE MedicId = @MedicId";
+                        SqlParameter[] updateQuantityParams = {
+                        new SqlParameter("@UpdatedQuantity", updatedQuantity),
+                        new SqlParameter("@MedicId", medicId)
+                    };
+
+                        dataAccessHelper.ExecuteUpdateQuery(updateQuantityQuery, updateQuantityParams);
+
+                        Console.WriteLine($"Medic {medicId} sold successfully. Remaining quantity: {updatedQuantity}");
+                        return true;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error: Not enough quantity available for Medic {medicId}");
+                        return false;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Error: Medic {medicId} not found in the database.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in SellMedic: {ex.Message}");
+                return false;
+            }
+        }
 
         // Thêm các phương thức khác nếu cần
     }

@@ -56,12 +56,12 @@ namespace QuanLyTiemThuoc.BUS
             return batchDAO.CountBatch(batchNumber);
         }
 
-        public string GetBatchCode( int batchNumber)
+        public string GetBatchCode( int batchNumber, DateTime inputDate)
         {
 
             try
             {
-                return batchDAO.GetBatchCode( batchNumber);
+                return batchDAO.GetBatchCode( batchNumber, inputDate);
             }
             catch (Exception ex)
             {
@@ -130,8 +130,8 @@ namespace QuanLyTiemThuoc.BUS
         {
             try
             {
-                batchDAO.IsBatchExist(batchNumber, inputDate);
-                return true;
+                return batchDAO.IsBatchExist(batchNumber, inputDate);
+
             }
             catch (Exception ex)
             {

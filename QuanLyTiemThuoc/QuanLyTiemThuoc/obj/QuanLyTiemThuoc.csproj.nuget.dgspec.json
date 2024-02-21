@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj": {}
+    "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj": {}
   },
   "projects": {
-    "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj": {
+    "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
+        "projectUniqueName": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
         "projectName": "QuanLyTiemThuoc",
-        "projectPath": "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
+        "projectPath": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\obj\\",
+        "outputPath": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

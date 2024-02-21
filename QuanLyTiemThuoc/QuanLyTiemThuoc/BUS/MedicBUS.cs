@@ -26,6 +26,18 @@ namespace QuanLyTiemThuoc.BUS
                 return new List<MedicDTO>();
             }
         }
+        public int GetID(string medicID)
+        {
+            try
+            {
+                return medicDAO.GetId(medicID);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in GetID: {ex.Message}");
+                return -1;
+            }
+        }
 
         public int CountExpiredMedic()
         {
@@ -144,6 +156,19 @@ namespace QuanLyTiemThuoc.BUS
         public List<MedicDTO> GetMedicByCategoryId(int categoryId)
         {
             return medicDAO.GetMedicByCategoryId(categoryId);
+        }
+        public bool SellMedic(string medicId, int soldQuantity)
+        {
+            try
+            {
+                // Gọi hàm từ DAO để thực hiện việc bán thuốc
+                return medicDAO.SellMedic(medicId, soldQuantity);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in MedicBUS - SellMedic: {ex.Message}");
+                return false;
+            }
         }
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using QuanLyTiemThuoc.DTO;
 using System.Data;
 using System.Data.SqlClient;
-using QuanLyTiemThuoc.DTO;
 
 namespace QuanLyTiemThuoc.DAO
 {
@@ -65,7 +63,7 @@ namespace QuanLyTiemThuoc.DAO
             return 0;
         }
 
-        public bool InsertBatch( int batchNumber)
+        public bool InsertBatch(int batchNumber)
         {
             DateTime inputDate = DateTime.Now.Date;
 
@@ -87,9 +85,10 @@ namespace QuanLyTiemThuoc.DAO
             };
             return dataAccessHelper.ExecuteInsertQuery(query, parameters);
         }
-        public string GetBatchCode( int batchNumber)
+        public string GetBatchCode(int batchNumber, DateTime inputDate)
         {
-            DateTime inputDate = DateTime.Now.Date;
+
+            DateTime date = inputDate.Date;
             string batchCode = string.Empty;
 
             try
@@ -97,7 +96,7 @@ namespace QuanLyTiemThuoc.DAO
                 string getBatchCodeQuery = "SELECT BatchCode FROM Batch WHERE InputDate = @InputDate AND BatchNumber = @BatchNumber";
 
                 SqlParameter[] parameters = {
-                    new SqlParameter("@InputDate", inputDate),
+                    new SqlParameter("@InputDate", date),
                     new SqlParameter("@BatchNumber", batchNumber)
                 };
 
@@ -117,27 +116,27 @@ namespace QuanLyTiemThuoc.DAO
         }
         public List<BatchDTO> GetBatchByBatchID(int batchID)
         {
-            
-                string getBatchCodeQuery = "SELECT BatchCode, BatchNumber FROM Batch WHERE BatchID = @BatchID";
 
-                SqlParameter[] parameters = {
+            string getBatchCodeQuery = "SELECT BatchCode, BatchNumber FROM Batch WHERE BatchID = @BatchID";
+
+            SqlParameter[] parameters = {
                     new SqlParameter("@BatchID", batchID)
 
                 };
 
-                var dataTable = dataAccessHelper.ExecuteSelectQuery(getBatchCodeQuery, parameters);
-                List<BatchDTO> batchs = new List<BatchDTO>();
-                foreach (DataRow row in dataTable.Rows)
+            var dataTable = dataAccessHelper.ExecuteSelectQuery(getBatchCodeQuery, parameters);
+            List<BatchDTO> batchs = new List<BatchDTO>();
+            foreach (DataRow row in dataTable.Rows)
+            {
+                BatchDTO batch = new BatchDTO
                 {
-                    BatchDTO batch = new BatchDTO
-                    {
-                        BatchCode = dataTable.Rows[0]["BatchCode"].ToString(),
-                        BatchNumber = Convert.ToInt32(dataTable.Rows[0]["BatchNumber"])
-                    };
-                    batchs.Add(batch);
-                }
+                    BatchCode = dataTable.Rows[0]["BatchCode"].ToString(),
+                    BatchNumber = Convert.ToInt32(dataTable.Rows[0]["BatchNumber"])
+                };
+                batchs.Add(batch);
+            }
 
-                return batchs;
+            return batchs;
         }
 
         public int GetBatchId(string batchCode)
@@ -211,12 +210,21 @@ namespace QuanLyTiemThuoc.DAO
         }
         public bool IsBatchExist(int batchNumber, DateTime inputDate)
         {
-            string query = "SELECT COUNT(*) FROM Batch WHERE BatchNumber = @BatchNumber AND InputDate = @InputDate";
-            SqlParameter[] parameters = { new SqlParameter("@BatchNumber", batchNumber),
+            try
+            {
+                string query = "SELECT COUNT(*) FROM Batch WHERE BatchNumber = @BatchNumber AND InputDate = @InputDate";
+                SqlParameter[] parameters = { new SqlParameter("@BatchNumber", batchNumber),
                                             new SqlParameter("@InputDate", inputDate)};
 
-            int batchCount = (int)dataAccessHelper.ExecuteSelectQuery(query, parameters).Rows[0][0];
-            return batchCount > 0;
+                int batchCount = (int)dataAccessHelper.ExecuteSelectQuery(query, parameters).Rows[0][0];
+                return batchCount > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in IsBatchExist: {ex.Message}");
+                return false;
+            }
+
         }
     }
 }

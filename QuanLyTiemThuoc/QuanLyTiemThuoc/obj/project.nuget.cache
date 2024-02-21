@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uwXH775FiqAoHOlZk25p3x5/kOLtgEsg6JtGyVDmotCR+uIJqcIp7doKVDSC97lwV8tHwn/40cubzjSucMHiSw==",
+  "dgSpecHash": "pmThhWgh6dnPndrb3fMXbiWW3znCFfF/GVulCa5YDQJJGGS42B/GurXqR/rCREOc8QBGBBNoNQpHGK6/zSZRbQ==",
   "success": true,
-  "projectFilePath": "D:\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
+  "projectFilePath": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

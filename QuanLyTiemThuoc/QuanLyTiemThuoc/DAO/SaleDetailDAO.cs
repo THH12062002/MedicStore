@@ -33,57 +33,36 @@ namespace QuanLyTiemThuoc.DAO
             }
             return saleDetails;
         }
-        public bool AddSaleDetails(List<SaleDetailDTO> saleDetails)
+        
+        public bool AddSaleDetail(int saleID, int medicineID, int quantitySold, decimal salePrice, int discountID)
         {
             try
             {
-                foreach (SaleDetailDTO saleDetail in saleDetails)
+                // Query to insert a new sale into the 'Sale' table
+                string saleDetailInsertQuery = "INSERT INTO SaleDetail (SaleID, MedicineID, QuantitySold, SalePrice, DiscountID) VALUES (@SaleID, @MedicineID, @QuantitySold, @SalePrice, @DiscountID)";
+                // Parameters for the SQL query
+                SqlParameter[] saleParameters =
                 {
-                    // Insert SaleDetail
-                    string saleDetailInsertQuery = "INSERT INTO SaleDetail (SaleID, MedicineID, QuantitySold, SalePrice, DiscountID) VALUES (@SaleID, @MedicineID, @QuantitySold, @SalePrice, @DiscountID)";
-                    SqlParameter[] saleDetailParameters =
-                    {
-                new SqlParameter("@SaleID", saleDetail.SaleID),
-                new SqlParameter("@MedicineID", saleDetail.MedicineID),
-                new SqlParameter("@QuantitySold", saleDetail.QuantitySold),
-                new SqlParameter("@SalePrice", saleDetail.SalePrice),
-                new SqlParameter("@DiscountID", saleDetail.DiscountID)
-            };
-                    bool saleDetailInserted = dataAccessHelper.ExecuteInsertQuery(saleDetailInsertQuery, saleDetailParameters);
+                    new SqlParameter("@SaleID", saleID),
+                    new SqlParameter("@MedicineID", medicineID),
+                    new SqlParameter("@QuantitySold", quantitySold),
+                    new SqlParameter("@SalePrice", salePrice),
+                    new SqlParameter("@DiscountID", discountID)
+                };
 
-                    if (!saleDetailInserted)
-                    {
-                        // Nếu có lỗi khi thêm SaleDetail, trả về false
-                        return false;
-                    }
+                // Execute the insert query with parameters
+                dataAccessHelper.ExecuteInsertQuery(saleDetailInsertQuery, saleParameters);
 
-                    // Update TotalAmount in Sale table
-                    string saleUpdateQuery = "UPDATE Sale SET TotalAmount = TotalAmount + @SalePrice WHERE SaleID = @SaleID";
-                    SqlParameter[] saleUpdateParameters =
-                    {
-                new SqlParameter("@SaleID", saleDetail.SaleID),
-                new SqlParameter("@SalePrice", saleDetail.SalePrice)
-            };
-                    bool saleUpdated = dataAccessHelper.ExecuteUpdateQuery(saleUpdateQuery, saleUpdateParameters);
-
-                    if (!saleUpdated)
-                    {
-                        // Nếu có lỗi khi cập nhật TotalAmount, trả về false
-                        return false;
-                    }
-                }
-
-                // Nếu không có vấn đề gì xảy ra, trả về true
+                // Return true to indicate success
                 return true;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error adding sale details to the database: {ex.Message}");
-                // Handle the exception as needed
-                return false;
+                Console.WriteLine($"Error adding sale to the database: {ex.Message}");
+                // Handle exceptions here if needed
+                return false; // Return false to indicate an error
             }
         }
-
 
 
     }

@@ -1,16 +1,21 @@
-﻿namespace QuanLyTiemThuoc.Users
+﻿using Microsoft.VisualBasic.ApplicationServices;
+
+namespace QuanLyTiemThuoc.Users
 {
     public partial class formUser : Form
     {
+        public int UserID { get; set; }
         public formUser()
         {
             InitializeComponent();
         }
 
-        public formUser(String name)
+        public formUser(String name, int userID)
         {
             InitializeComponent();
             lblUserName.Text = name;
+            this.UserID = userID;
+            UserID = userID;
         }
 
         private void formUser_Load(object sender, EventArgs e)
@@ -65,6 +70,7 @@
 
         private void btnSellMedicine_Click(object sender, EventArgs e)
         {
+            uS_SellMedicine1.UserID = this.UserID;
             uS_SellMedicine1.Visible = true;
             uS_SellMedicine1.BringToFront();
         }

@@ -79,17 +79,17 @@ namespace QuanLyTiemThuoc.Users
             string newDescription = txtDescription.Text;
             int newBatchID = 0;
             int newCategoryID = categoryBUS.GetCategoryId(newCategoryName);
-            if (batchBUS.IsBatchExist(newBatchNumber ,newInputDate))
+            if (batchBUS.IsBatchExist(newBatchNumber, newInputDate))
             {
                 newBatchID = batchBUS.GetBatchIdByBatch(newBatchNumber, newInputDate);// Fix this line
-                
+
             }
             else
             {
                 bool insertBatch = batchBUS.InsertBatchByBatch(newBatchNumber, newInputDate);
                 if (insertBatch)
                 {
-                    string batchCode = batchBUS.GetBatchCode(newBatchNumber);
+                    string batchCode = batchBUS.GetBatchCode(newBatchNumber, newInputDate);
                     newBatchID = batchBUS.GetBatchId(batchCode);
                 }
             }

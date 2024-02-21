@@ -100,7 +100,36 @@ namespace QuanLyTiemThuoc.DAO
 
             return discounts;
         }
+        public int GetDiscountIDByCode(string discountCode)
+        {
+            int discountID = 0;
+            try
+            {
+                // Sử dụng tham số để tránh SQL injection
+                string query = "SELECT DiscountID FROM Discount WHERE DiscountCode = @DiscountCode";
 
+                SqlParameter[] parameters = { new SqlParameter("@DiscountCode", discountCode) };
+
+                // Execute the query
+                DataTable dataTable = dataAccessHelper.ExecuteSelectQuery(query, parameters);
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                {
+                    // Lấy DiscountID từ hàng đầu tiên của kết quả truy vấn
+                    discountID = Convert.ToInt32(dataTable.Rows[0]["DiscountID"]);
+                }
+
+                // Nếu không tìm thấy DiscountID, trả về một giá trị mặc định hoặc xử lý tùy thuộc vào yêu cầu của bạn
+                return discountID;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting DiscountID by DiscountCode: {ex.Message}");
+                // Xử lý ngoại lệ ở đây nếu cần
+                // Bạn có thể chọn trả về -1 hoặc ném một ngoại lệ khác tùy thuộc vào yêu cầu của bạn
+                throw; // Hoặc trả về -1 nếu bạn không muốn ném ngoại lệ
+            }
+        }
 
         // Thêm các phương thức khác nếu cần
     }

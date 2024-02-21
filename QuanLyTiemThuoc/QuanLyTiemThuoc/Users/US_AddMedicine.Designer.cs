@@ -162,6 +162,7 @@
             txtMedicineID.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtMedicineID.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtMedicineID.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtMedicineID.Enabled = false;
             txtMedicineID.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMedicineID.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtMedicineID.ForeColor = Color.Black;

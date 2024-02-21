@@ -9,7 +9,7 @@ namespace QuanLyTiemThuoc.Users
 {
     public partial class US_SellMedicine : UserControl
     {
-        /*public int userId{ get; set; }*/
+        public int UserID { get; set; }
         private SaleDetailBUS saleDetailBUS;
         private MedicBUS medicBUS;
         private SaleDTO saleDTO;
@@ -17,6 +17,7 @@ namespace QuanLyTiemThuoc.Users
         private SaleDetailDTO saleDetailDTO;
         private DiscountDTO discountDTO;
         private CategoryBUS categoryBUS;
+        private SaleBUS saleBUS;
         private Dictionary<int, List<MedicDTO>> medicineData = new Dictionary<int, List<MedicDTO>>();
         private List<MedicDTO> cartItems = new List<MedicDTO>();
 
@@ -35,7 +36,24 @@ namespace QuanLyTiemThuoc.Users
             txtQuantity.TextChanged += UpdateTotalPrice;
             txtDiscountPercentage.TextChanged += UpdateTotalPrice;
         }
-       
+
+        public US_SellMedicine(int userId)
+        {
+            InitializeComponent();
+            this.UserID = userId;
+            medicBUS = new MedicBUS();
+            categoryBUS = new CategoryBUS();
+            discountBUS = new DiscountBUS();
+            saleDTO = new SaleDTO();
+            saleDetailBUS = new SaleDetailBUS();
+            saleDetailDTO = new SaleDetailDTO();
+            discountDTO = new DiscountDTO();
+            saleBUS = new SaleBUS();
+            PopulateTreeView();
+            txtUnitPrice.TextChanged += UpdateTotalPrice;
+            txtQuantity.TextChanged += UpdateTotalPrice;
+            txtDiscountPercentage.TextChanged += UpdateTotalPrice;
+        }
 
         private void PopulateTreeView()
         {
@@ -132,11 +150,15 @@ namespace QuanLyTiemThuoc.Users
                     if (medicineExists)
                     {
                         // Thuốc đã tồn tại trong giỏ hàng, cập nhật quantity
-                        var existingMedicine = cartItems.First(item => item.MedicId == medicineId);
-                        existingMedicine.Quantity += quantity;
+                        var existingMedicine = cartItems.FirstOrDefault(item => item.MedicId == medicineId);
 
-                        // Cập nhật quantity trong DataGridView
-                        UpdateDataGridViewRow(existingMedicine);
+                        if (existingMedicine != null)
+                        {
+                            existingMedicine.Quantity += quantity;
+
+                            // Cập nhật quantity trong DataGridView
+                            UpdateDataGridViewRow(existingMedicine);
+                        }
                     }
                     else
                     {
@@ -148,7 +170,6 @@ namespace QuanLyTiemThuoc.Users
                             EDate = expirationDate,
                             PerUnit = unitPrice,
                             Quantity = quantity,
-
                             // Các thuộc tính khác của MedicDTO
                         };
                         DiscountDTO discountDTO = new DiscountDTO
@@ -271,22 +292,41 @@ namespace QuanLyTiemThuoc.Users
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem có hàng được chọn không
-            if (guna2DataGridView1.SelectedRows.Count > 0)
+            if (guna2DataGridView1.SelectedCells.Count > 0)
             {
                 // Lấy chỉ số của hàng được chọn
-                int selectedIndex = guna2DataGridView1.SelectedRows[0].Index;
+                int selectedIndex = guna2DataGridView1.SelectedCells[0].RowIndex;
 
-                // Hiển thị hộp thoại xác nhận
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thuốc này khỏi giỏ hàng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                // Kiểm tra xác nhận từ người dùng
-                if (result == DialogResult.Yes)
+                // Kiểm tra xem hàng đó có đang ở trạng thái "added" không
+                if (guna2DataGridView1.Rows[selectedIndex].IsNewRow)
                 {
-                    // Xóa hàng được chọn khỏi DataGridView
+                    // Nếu là hàng mới thêm và chưa được commit, chỉ cần xóa khỏi DataGridView
                     guna2DataGridView1.Rows.RemoveAt(selectedIndex);
-                    decimal totalAmount = CalculateTotalAmount();
-                    lblTotal.Text = $"Total Amount: {totalAmount:C}";
+                }
+                else
+                {
+                    // Nếu không phải là hàng mới, thực hiện xóa
+                    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thuốc này khỏi giỏ hàng không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        // Lấy thông tin thuốc từ DataGridView
+                        string medicineID = guna2DataGridView1.Rows[selectedIndex].Cells["MedicineID"].Value?.ToString();
+
+                        // Xóa hàng được chọn khỏi DataGridView
+                        guna2DataGridView1.Rows.RemoveAt(selectedIndex);
+
+                        // Xóa mục tương ứng từ cartItems
+                        MedicDTO removedMedicine = cartItems.FirstOrDefault(item => item.MedicId == medicineID);
+                        if (removedMedicine != null)
+                        {
+                            cartItems.Remove(removedMedicine);
+                        }
+
+                        // Cập nhật tổng giá trị
+                        decimal totalAmount = CalculateTotalAmount();
+                        lblTotal.Text = $"Total Amount: {totalAmount:C}";
+                    }
                 }
             }
             else
@@ -297,31 +337,63 @@ namespace QuanLyTiemThuoc.Users
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-
-
-            if (cartItems.Count > 0)
+            decimal totalAmount = CalculateTotalAmount();
+            int userID = this.UserID;
+            bool addSale = saleBUS.AddSale(totalAmount, userID);
+            if (addSale)
             {
-                StringBuilder receipt = new StringBuilder();
-                receipt.AppendLine("HÓA ĐƠN BÁN HÀNG");
-                receipt.AppendLine("----------------------");
-
-                foreach (var item in cartItems)
+                int saleID = saleBUS.GetLatestSaleID();
+                foreach (DataGridViewRow row in guna2DataGridView1.Rows)
                 {
-                    receipt.AppendLine($"{item.MedicId} - {item.MName} - {item.Quantity} - {item.Quantity * item.PerUnit:C}");
+                    // Lấy giá trị từ cột 'DiscountCode' của từng hàng
+                    string discountCode = row.Cells["DiscountCode"].Value?.ToString();
+                    string medicineID = row.Cells["MedicineID"].Value?.ToString();
+                    int id = medicBUS.GetID(medicineID);
+                    int quantity = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["Quantity"].Value);
+                    int unitPrice = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["UnitPrice"].Value);
+
+                    decimal discountPercentage = Convert.ToDecimal(guna2DataGridView1.CurrentRow.Cells["DiscountPercentage"].Value);
+                    decimal totalPrice = CalculateTotalPrice(unitPrice, quantity, discountPercentage);
+                    // Kiểm tra nếu discountCode không rỗng hoặc null
+                    if (!string.IsNullOrEmpty(discountCode))
+                    {
+                        int discountID = discountBUS.GetDiscountIDByCode(discountCode);
+                        bool addSaleDetail = saleDetailBUS.AddSaleDetail(saleID, id, quantity, totalPrice, discountID);
+
+                        // Thực hiện các thao tác mong muốn với giá trị discountCode ở đây
+                        // Ví dụ: Thêm giá trị vào một danh sách, hiển thị trong TextBox, vv.
+                    }
+                    else
+                    {
+                        bool addSaleDetail = saleDetailBUS.AddSaleDetail(saleID, id, quantity, totalPrice, 11);
+                    }
+                    medicBUS.SellMedic(medicineID, quantity);
                 }
+                if (cartItems.Count > 0)
+                {
+                    StringBuilder receipt = new StringBuilder();
+                    receipt.AppendLine("HÓA ĐƠN BÁN HÀNG");
+                    receipt.AppendLine("----------------------");
 
-                receipt.AppendLine("----------------------");
-                receipt.AppendLine($"Tổng cộng: {cartItems.Sum(item => item.Quantity * item.PerUnit):C}");
+                    foreach (var item in cartItems)
+                    {
+                        receipt.AppendLine($"{item.MedicId} - {item.MName} - {item.Quantity} - {item.Quantity * item.PerUnit:C}");
+                    }
 
-                MessageBox.Show(receipt.ToString(), "Thông tin hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    receipt.AppendLine("----------------------");
+                    receipt.AppendLine($"Tổng cộng: {cartItems.Sum(item => item.Quantity * item.PerUnit):C}");
 
-                cartItems.Clear();
-                ///UpdateCartDataGridView();
-                //CalculateTotalPrice();
-            }
-            else
-            {
-                MessageBox.Show("Giỏ hàng trống. Vui lòng thêm thuốc vào giỏ hàng trước khi thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(receipt.ToString(), "Thông tin hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    guna2DataGridView1.Rows.Clear();
+                    cartItems.Clear();
+
+                    ///UpdateCartDataGridView();
+                    //CalculateTotalPrice();
+                }
+                else
+                {
+                    MessageBox.Show("Giỏ hàng trống. Vui lòng thêm thuốc vào giỏ hàng trước khi thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -338,43 +410,51 @@ namespace QuanLyTiemThuoc.Users
         private void txtQuantity_TextChanged(object sender, EventArgs e)
         {
             long.TryParse(txtUnitPrice.Text, out long unitPrice);
-            int.TryParse(txtQuantity.Text, out int quantity);
+            long.TryParse(txtQuantity.Text, out long quantity);
             decimal totalPrice = CalculateTotalPrice(unitPrice, quantity, 0);
             List<DiscountDTO> discountList = discountBUS.GetDiscountsBelowTotalSaleAmount(totalPrice);
-                if (discountList != null && discountList.Count > 0)
-                {
+            if (discountList != null && discountList.Count > 0)
+            {
 
-                    // Use the first discount from the list
-                    DiscountDTO firstDiscount = discountList[0];
+                // Use the first discount from the list
+                DiscountDTO firstDiscount = discountList[0];
                 if (firstDiscount != null && firstDiscount.EndDate < DateTime.Now)
                 {
-                    MessageBox.Show("Mã giảm giá đã hết hạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    txtDiscountCode.Text = string.Empty;
+                    txtDiscountPercentage.Text = "0";
                 }
-                else 
+                else
                 {
-                    // Populate the corresponding fields with discount information
-                    txtDiscountCode.Text = firstDiscount.DiscountCode;
-                    txtDiscountPercentage.Text = firstDiscount.DiscountPercentage.ToString();
+                    if (firstDiscount.DiscountCode == "null")
+                    {
+                        firstDiscount = discountList[1];
+                        txtDiscountCode.Text = firstDiscount.DiscountCode;
+                        txtDiscountPercentage.Text = firstDiscount.DiscountPercentage.ToString();
+                    }
+                    else
+                    {
+                        txtDiscountCode.Text = firstDiscount.DiscountCode;
+                        txtDiscountPercentage.Text = firstDiscount.DiscountPercentage.ToString();
 
-                    // Additional information, replace with your actual controls
-                    // txtStartDate.Text = firstDiscount.StartDate.ToString();
-                    // txtEndDate.Text = firstDiscount.EndDate.ToString();
+                        // Additional information, replace with your actual controls
+                        // txtStartDate.Text = firstDiscount.StartDate.ToString();
+                        // txtEndDate.Text = firstDiscount.EndDate.ToString();
+                    }
+                    // Populate the corresponding fields with discount information
+
                 }
 
             }
-                else
-                {
-                    // No discounts found, continue with the program
-                    // Clear discount-related fields if needed
-                    txtDiscountCode.Text = string.Empty;
-                    txtDiscountPercentage.Text = "0";
-                    // Clear additional information fields if needed
-                    // txtStartDate.Text = string.Empty;
-                    // txtEndDate.Text = string.Empty;
-                }
-
-            
+            else
+            {
+                // No discounts found, continue with the program
+                // Clear discount-related fields if needed
+                txtDiscountCode.Text = string.Empty;
+                txtDiscountPercentage.Text = "0";
+                // Clear additional information fields if needed
+                // txtStartDate.Text = string.Empty;
+                // txtEndDate.Text = string.Empty;
+            }
         }
 
         private void txtUnitPrice_TextChanged(object sender, EventArgs e)

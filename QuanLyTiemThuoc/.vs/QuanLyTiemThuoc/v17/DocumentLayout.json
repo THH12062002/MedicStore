@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\users\\us_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\users\\us_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\users\\us_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\users\\us_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\users\\us_businessstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\users\\us_businessstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\sqldataaccesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\sqldataaccesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\users\\us_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\users\\us_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dao\\saledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dao\\saledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\bus\\salebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\bus\\salebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dto\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dto\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\bus\\saledetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\bus\\saledetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dao\\saledetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dao\\saledetaildao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dto\\saledetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dto\\saledetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\users\\us_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\users\\us_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\bus\\usersbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\bus\\usersbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dao\\usersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dao\\usersdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|d:\\sv_nam_4\\phattrienphanmemungdung\\medicstore\\quanlytiemthuoc\\quanlytiemthuoc\\dto\\medicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951B7D5B-D70D-4480-8DB5-174E6458DD52}|QuanLyTiemThuoc\\QuanLyTiemThuoc.csproj|solutionrelative:quanlytiemthuoc\\dto\\medicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 83,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,157 +42,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SaleBUS.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\SaleBUS.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\BUS\\SaleBUS.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\SaleBUS.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\BUS\\SaleBUS.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCUAAAAiAAAA",
+              "DocumentIndex": 0,
+              "Title": "US_AddMedicine.cs [Design]",
+              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_AddMedicine.cs [Design]",
+              "RelativeToolTip": "QuanLyTiemThuoc\\Users\\US_AddMedicine.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T11:29:06.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SaleDetailBUS.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\SaleDetailBUS.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\BUS\\SaleDetailBUS.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\SaleDetailBUS.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\BUS\\SaleDetailBUS.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwB0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T09:28:03.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SaleDetailDAO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\SaleDetailDAO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DAO\\SaleDetailDAO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\SaleDetailDAO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DAO\\SaleDetailDAO.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwCYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T09:19:53.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "US_SellMedicine.cs [Design]",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_SellMedicine.cs [Design]",
-              "RelativeToolTip": "QuanLyTiemThuoc\\Users\\US_SellMedicine.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T09:04:11.535Z",
+              "WhenOpened": "2024-02-21T15:37:06.305Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SaleDTO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\SaleDTO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DTO\\SaleDTO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\SaleDTO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DTO\\SaleDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAiAAAA",
+              "DocumentIndex": 2,
+              "Title": "US_BusinessStatistics.cs",
+              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_BusinessStatistics.cs",
+              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\Users\\US_BusinessStatistics.cs",
+              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_BusinessStatistics.cs",
+              "RelativeToolTip": "QuanLyTiemThuoc\\Users\\US_BusinessStatistics.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvyMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T04:31:53.744Z",
+              "WhenOpened": "2024-02-21T15:35:26.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SaleDAO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\SaleDAO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DAO\\SaleDAO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\SaleDAO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DAO\\SaleDAO.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAArwEEAAAAAAAAA",
+              "Title": "US_AddMedicine.cs",
+              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "RelativeToolTip": "QuanLyTiemThuoc\\Users\\US_AddMedicine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T04:25:17.315Z",
+              "WhenOpened": "2024-02-21T15:34:29.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MedicDTO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\MedicDTO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DTO\\MedicDTO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\MedicDTO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DTO\\MedicDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T05:44:48.194Z",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\App.config",
+              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\App.config",
+              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\App.config",
+              "RelativeToolTip": "QuanLyTiemThuoc\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-21T15:34:10.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "SqlDataAccesshelper.cs",
+              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\SqlDataAccesshelper.cs",
+              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\SqlDataAccesshelper.cs",
+              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\SqlDataAccesshelper.cs",
+              "RelativeToolTip": "QuanLyTiemThuoc\\SqlDataAccesshelper.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwBoAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T15:34:00.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "US_SellMedicine.cs",
               "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
               "RelativeDocumentMoniker": "QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
               "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
               "RelativeToolTip": "QuanLyTiemThuoc\\Users\\US_SellMedicine.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAvwNAAAAAvAAAA",
+              "ViewState": "AQIAANkBAAAAAAAAAADwv/ABAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T04:24:44.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SaleDetailDTO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\SaleDetailDTO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DTO\\SaleDetailDTO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\SaleDetailDTO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DTO\\SaleDetailDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T04:24:37.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersBUS.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\UsersBUS.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\BUS\\UsersBUS.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\BUS\\UsersBUS.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\BUS\\UsersBUS.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAwEUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T09:59:12.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsersDTO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\UsersDTO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DTO\\UsersDTO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DTO\\UsersDTO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DTO\\UsersDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T09:59:47.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersDAO.cs",
-              "DocumentMoniker": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\UsersDAO.cs",
-              "RelativeDocumentMoniker": "QuanLyTiemThuoc\\DAO\\UsersDAO.cs",
-              "ToolTip": "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\DAO\\UsersDAO.cs",
-              "RelativeToolTip": "QuanLyTiemThuoc\\DAO\\UsersDAO.cs",
-              "ViewState": "AQIAAA4BAAAAAAAAAAAwwBoBAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-17T10:00:07.601Z",
+              "WhenOpened": "2024-02-21T15:28:15.251Z",
               "EditorCaption": ""
             }
           ]

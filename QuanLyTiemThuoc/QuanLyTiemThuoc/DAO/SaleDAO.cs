@@ -36,33 +36,102 @@ namespace QuanLyTiemThuoc.DAO
             return sales;
         }
 
-        public bool AddSale(SaleDTO saleDTO)
+        public bool AddSale(decimal totalAmount, int sellerAccountID)
         {
             try
             {
-                // Thực hiện thêm Sale vào Cơ sở dữ liệu
+                // Query to insert a new sale into the 'Sale' table
                 string saleInsertQuery = "INSERT INTO Sale (SaleDate, TotalAmount, SellerAccountID) VALUES (@SaleDate, @TotalAmount, @SellerAccountID);";
 
+                // Parameters for the SQL query
                 SqlParameter[] saleParameters =
                 {
-            new SqlParameter("@SaleDate", saleDTO.SaleDate),
-            new SqlParameter("@TotalAmount", saleDTO.TotalAmount),
-            new SqlParameter("@SellerAccountID", saleDTO.SellerAccountID)
-        };
+                    new SqlParameter("@SaleDate", DateTime.Now),
+                    new SqlParameter("@TotalAmount", totalAmount),
+                    new SqlParameter("@SellerAccountID", sellerAccountID)
+                };
 
-                // Thực hiện truy vấn
+                // Execute the insert query with parameters
                 dataAccessHelper.ExecuteInsertQuery(saleInsertQuery, saleParameters);
 
-                // Trả về true để thể hiện thành công
+                // Return true to indicate success
                 return true;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error adding sale to the database: {ex.Message}");
-                // Xử lý exception tại đây nếu cần
-                return false; // Trả về false để thể hiện lỗi
+                // Handle exceptions here if needed
+                return false; // Return false to indicate an error
+            }
+        }
+        public int GetLatestSaleID()
+        {
+            int saleID = 0;
+            try
+            {
+                // Query to get the latest SaleID from the 'Sale' table
+                string query = "SELECT TOP 1 SaleID FROM Sale ORDER BY SaleID DESC;";
+
+                // Execute the query
+                DataTable dataTable = dataAccessHelper.ExecuteSelectAllQuery(query);
+
+                if (dataTable.Rows.Count > 0)
+                {
+                    // Get the SaleID from the first row
+                    saleID = Convert.ToInt32(dataTable.Rows[0]["SaleID"]);
+                }
+
+                // If no SaleID is found, return a default value or throw an exception
+                // You may choose to return -1 or throw an exception based on your requirements
+                return saleID;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting latest SaleID: {ex.Message}");
+                // Handle exceptions here if needed
+                // You may choose to return -1 or throw an exception based on your requirements
+                return -1;
             }
         }
 
+        public decimal GetTotalRevenueByDate(DateTime saleDate)
+        {
+            DateTime saleDateDay = saleDate.Date;
+            decimal totalRevenue = 0;
+            try
+            {
+                // Query to calculate total revenue for a specific date
+                string query = "SELECT SUM(TotalAmount) AS TotalRevenue FROM Sale WHERE SaleDate = @SaleDate";
+
+                // Parameter for the SQL query
+                SqlParameter[] parameters =
+                {
+            new SqlParameter("@SaleDate", saleDateDay)
+        };
+
+                // Execute the query
+                DataTable dataTable = dataAccessHelper.ExecuteSelectQuery(query, parameters);
+
+                if (dataTable.Rows.Count > 0 && dataTable.Rows[0]["TotalRevenue"] != DBNull.Value)
+                {
+                    // Get the TotalRevenue from the first row
+                    totalRevenue = Convert.ToDecimal(dataTable.Rows[0]["TotalRevenue"]);
+                }
+
+                // If no TotalRevenue is found, return 0 or throw an exception based on your requirements
+                // You may choose to return -1 or throw an exception based on your requirements
+                return totalRevenue;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getting total revenue by date: {ex.Message}");
+                // Handle exceptions here if needed
+                // You may choose to return -1 or throw an exception based on your requirements
+                return -1;
+            }
+        }
+
+
     }
-}       
+
+}
