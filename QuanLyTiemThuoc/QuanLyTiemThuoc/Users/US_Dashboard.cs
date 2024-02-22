@@ -23,7 +23,9 @@ namespace QuanLyTiemThuoc.Users
 
             // Thêm dữ liệu mới
             chart1.Series["Expired Medicine"].Points.AddXY("Expired Medicine", countExpired);
+            chart1.Series["Expired Medicine"].IsValueShownAsLabel = true;
             chart1.Series["Valid Medicine"].Points.AddXY("Valid Medicine", countValid);
+            chart1.Series["Valid Medicine"].IsValueShownAsLabel = true;
 
             // Cập nhật lại biểu đồ
             chart1.Update();

@@ -22,6 +22,9 @@
     <Compile Update="Users\formUser.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Users\Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Users\US_AddMedicine.cs">
       <SubType>UserControl</SubType>
     </Compile>

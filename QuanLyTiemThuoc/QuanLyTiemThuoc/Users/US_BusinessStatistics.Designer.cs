@@ -36,6 +36,11 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label7 = new Label();
             txtStartDate = new DateTimePicker();
             label2 = new Label();
@@ -44,7 +49,10 @@
             btnApply = new Guna.UI2.WinForms.Guna2Button();
             statisticChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            btnSelect = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)statisticChart).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label7
@@ -120,13 +128,13 @@
             statisticChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             statisticChart.Legends.Add(legend1);
-            statisticChart.Location = new Point(99, 391);
+            statisticChart.Location = new Point(756, 263);
             statisticChart.Name = "statisticChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Total Price";
             statisticChart.Series.Add(series1);
-            statisticChart.Size = new Size(1451, 615);
+            statisticChart.Size = new Size(851, 653);
             statisticChart.TabIndex = 19;
             title1.Name = "Statistic Chart";
             statisticChart.Titles.Add(title1);
@@ -135,11 +143,86 @@
             // 
             guna2Elipse1.TargetControl = this;
             // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            guna2DataGridView1.BackgroundColor = Color.Turquoise;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            guna2DataGridView1.ColumnHeadersHeight = 4;
+            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.Location = new Point(53, 263);
+            guna2DataGridView1.Name = "guna2DataGridView1";
+            guna2DataGridView1.RowHeadersVisible = false;
+            guna2DataGridView1.RowHeadersWidth = 51;
+            guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.Size = new Size(669, 653);
+            guna2DataGridView1.TabIndex = 20;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.BackColor = Color.Turquoise;
+            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
+            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // btnSelect
+            // 
+            btnSelect.BorderRadius = 20;
+            btnSelect.CustomizableEdges = customizableEdges3;
+            btnSelect.DisabledState.BorderColor = Color.DarkGray;
+            btnSelect.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSelect.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSelect.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSelect.FillColor = Color.FromArgb(0, 192, 192);
+            btnSelect.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSelect.ForeColor = Color.White;
+            btnSelect.Image = (Image)resources.GetObject("btnSelect.Image");
+            btnSelect.Location = new Point(53, 959);
+            btnSelect.Name = "btnSelect";
+            btnSelect.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnSelect.Size = new Size(184, 56);
+            btnSelect.TabIndex = 21;
+            btnSelect.Text = "Select";
+            btnSelect.Click += btnSelect_Click;
+            // 
             // US_BusinessStatistics
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(btnSelect);
+            Controls.Add(guna2DataGridView1);
             Controls.Add(statisticChart);
             Controls.Add(btnApply);
             Controls.Add(txtEndDate);
@@ -150,6 +233,7 @@
             Name = "US_BusinessStatistics";
             Size = new Size(1667, 1102);
             ((System.ComponentModel.ISupportInitialize)statisticChart).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,5 +248,7 @@
         private Guna.UI2.WinForms.Guna2Button btnApply;
         private System.Windows.Forms.DataVisualization.Charting.Chart statisticChart;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2Button btnSelect;
     }
 }
