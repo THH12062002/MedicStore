@@ -39,5 +39,14 @@ namespace QuanLyTiemThuoc.Users
             // Cập nhật dữ liệu trên biểu đồ sau khi thực hiện Procedure
             UpdateChart();
         }
+
+        private void toolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Thực hiện Procedure
+            medicBUS.CheckAndUpdateDrugStatus();
+
+            // Cập nhật dữ liệu trên biểu đồ sau khi thực hiện Procedure
+            UpdateChart();
+        }
     }
 }

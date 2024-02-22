@@ -206,7 +206,124 @@ namespace QuanLyTiemThuoc.Users
 
         }
 
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMedicineName.Text) || string.IsNullOrEmpty(txtBatch.Text) ||
+            string.IsNullOrEmpty(txtQuantity.Text) || string.IsNullOrEmpty(txtUnitPrice.Text) ||
+             txtCategory.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kiểm tra kiểu dữ liệu của các trường số
+            if (!int.TryParse(txtBatch.Text, out int batchNumber) || batchNumber <= 0 ||
+                !int.TryParse(txtQuantity.Text, out int quantity) || quantity <= 0 ||
+                !long.TryParse(txtUnitPrice.Text, out long perUnit))
+            {
+                MessageBox.Show("Vui lòng nhập đúng kiểu dữ liệu cho các trường số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kiểm tra xem ngày sản xuất và ngày hết hạn đã được chọn
+            if (txtProductionDate.Value >= txtExpirationDate.Value)
+            {
+                MessageBox.Show("Ngày sản xuất phải trước ngày hết hạn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int CountBatch = batchBUS.CountBatch(batchNumber);
+
+            if (CountBatch == 1)
+            {
+                string categoryName = txtCategory.Text;
+                int categoryId = categoryBUS.GetCategoryId(categoryName);
+                string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
+                int batchId = batchBUS.GetBatchId(batchCode);
+                string categoryToM = categoryBUS.GetCategoryToM(categoryName);
+                string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
+
+                // Tạo một đối tượng MedicDTO từ thông tin người dùng nhập vào
+                MedicDTO newMedic = new MedicDTO
+                {
+                    MedicId = medicineID,
+                    MName = txtMedicineName.Text,
+                    MDate = txtProductionDate.Value,
+                    EDate = txtExpirationDate.Value,
+                    Quantity = int.Parse(txtQuantity.Text),
+                    PerUnit = long.Parse(txtUnitPrice.Text),
+                    BatchID = batchId,
+                    CategoryID = categoryId,
+                    Description = txtDescription.Text
+                };
+
+                // Thực hiện hàm AddMedic để thêm thuốc vào cơ sở dữ liệu
+                if (medicBUS.AddMedic(newMedic))
+                {
+                    // Thông báo thành công hoặc cập nhật giao diện nếu cần
+                    MessageBox.Show("Thêm thuốc thành công!");
+                    Reset();
+                }
+                else
+                {
+                    // Thông báo lỗi khi AddMedic không thành công
+                    MessageBox.Show("Lỗi khi thêm thuốc!");
+                }
+            }
+            else
+            {
+                bool batchInserted = batchBUS.InsertBatch(batchNumber);
+
+                if (batchInserted)
+                {
+                    string categoryName = txtCategory.Text;
+                    int categoryId = categoryBUS.GetCategoryId(categoryName);
+                    string batchCode = batchBUS.GetBatchCode(batchNumber, inputDate);
+                    int batchId = batchBUS.GetBatchId(batchCode);
+                    string categoryToM = categoryBUS.GetCategoryToM(categoryName);
+                    string medicineID = medicBUS.GetMedicineID(categoryToM, batchCode);
+
+                    // Tạo một đối tượng MedicDTO từ thông tin người dùng nhập vào
+                    MedicDTO newMedic = new MedicDTO
+                    {
+                        MedicId = medicineID,
+                        MName = txtMedicineName.Text,
+                        MDate = txtProductionDate.Value,
+                        EDate = txtExpirationDate.Value,
+                        Quantity = int.Parse(txtQuantity.Text),
+                        PerUnit = long.Parse(txtUnitPrice.Text),
+                        BatchID = batchId,
+                        CategoryID = categoryId,
+                        Description = txtDescription.Text
+                    };
+
+                    // Thực hiện hàm AddMedic để thêm thuốc vào cơ sở dữ liệu
+                    if (medicBUS.AddMedic(newMedic))
+                    {
+                        medicBUS.CheckAndUpdateDrugStatus();
+                        // Thông báo thành công hoặc cập nhật giao diện nếu cần
+                        MessageBox.Show("Thêm thuốc thành công!");
+                        Reset();
+                    }
+                    else
+                    {
+                        // Thông báo lỗi khi AddMedic không thành công
+                        MessageBox.Show("Lỗi khi thêm thuốc!");
+                    }
+                }
+                else
+                {
+                    // Thông báo lỗi khi InsertBatch không thành công
+                    MessageBox.Show("Lỗi khi thêm số lô hàng!");
+                }
+            }
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
     }
 
-    }
+}
 

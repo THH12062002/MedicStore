@@ -132,5 +132,48 @@ namespace QuanLyTiemThuoc.Users
         {
             LoadMedicinesByCategory();
         }
+
+        private void thuốcChữaBệnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadMedicinesByCategory();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (guna2DataGridView1.SelectedRows.Count > 0)
+            {
+                // Lấy MedicId từ cột đầu tiên của dòng được chọn
+                string medicIdToDelete = guna2DataGridView1.SelectedRows[0].Cells["MedicId"].Value.ToString();
+
+                // Gọi phương thức xóa thuốc của MedicBUS
+                bool isDeleted = medicBUS.DeleteMedic(medicIdToDelete);
+
+                if (isDeleted)
+                {
+                    MessageBox.Show("Thuốc đã được xóa thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Sau khi xóa thành công, cập nhật hiển thị danh sách thuốc
+                    LoadMedicinesByCategory();
+                }
+                else
+                {
+                    MessageBox.Show("Không thể xóa thuốc. Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một dòng để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

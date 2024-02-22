@@ -9,7 +9,7 @@ namespace QuanLyTiemThuoc.Users
         private SaleBUS saleBUS;
         private SaleDTO saleDTO;
         private SaleDetailDTO saleDetailDTO;
-        
+
         public US_BusinessStatistics()
         {
             InitializeComponent();
@@ -111,7 +111,7 @@ namespace QuanLyTiemThuoc.Users
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void guna2DataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
@@ -120,6 +120,44 @@ namespace QuanLyTiemThuoc.Users
             {
                 guna2DataGridView1.Columns.Remove("SellerAccountID");
             }
+
+        }
+
+        private void applyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateChart();
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (guna2DataGridView1.SelectedRows.Count > 0)
+            {
+                // Get the index of the selected row
+                int selectedRowIndex = guna2DataGridView1.SelectedRows[0].Index;
+
+                // Get the index of the column containing SaleID
+                int idColumnIndex = guna2DataGridView1.Columns["SaleID"].Index;
+
+                // Get the index of the column containing TotalAmount
+                int totalAmountIndex = guna2DataGridView1.Columns["TotalAmount"].Index;
+
+                if (selectedRowIndex >= 0)
+                {
+                    // Get the SaleID and TotalAmount from the selected row
+                    int selectedOrder = Convert.ToInt32(guna2DataGridView1.Rows[selectedRowIndex].Cells[idColumnIndex].Value);
+                    decimal totalAmount = Convert.ToDecimal(guna2DataGridView1.Rows[selectedRowIndex].Cells[totalAmountIndex].Value);
+
+                    // Create an instance of the Orders form with the selected SaleID and TotalAmount
+                    Orders order = new Orders(selectedOrder, totalAmount);
+
+                    // Show the Orders form
+                    order.ShowDialog();
+                }
+            }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
 
         }
     }

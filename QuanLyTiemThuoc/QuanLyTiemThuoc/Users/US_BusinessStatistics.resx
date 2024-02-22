@@ -494,7 +494,7 @@
   <data name="btnSelect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHyuSURBVHhe7d0F
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHyuSURBVHhe7d0F
         uBXF3wfwl3uBS3d3p3R3SktLqUh3dxggBphgAGJhoBiAIoJIioQ00h12oShg6++dWb38ie+9zNk4Z885
         39/zfJ7nff8gszs7O/M7u7Mz/+dClFQGK88rm5UvlHOKEFFU+Uv5UnlH6arEKAwGI8Iin3K3clxBHQER
         0W6liMJgMCIgCin6l/4fCrrhiYgud1appDAYjDCN5Mqdyi8KusmJiBLyg1JZYTAYYRb6cf8WBd3YREQm
@@ -1030,4 +1030,7 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>161, 17</value>
+  </metadata>
 </root>

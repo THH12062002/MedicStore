@@ -45,18 +45,21 @@ namespace QuanLyTiemThuoc.Users
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             pictureBox1 = new PictureBox();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            menuStrip1 = new MenuStrip();
+            toolToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(12, 8);
+            label7.Location = new Point(14, 11);
             label7.Name = "label7";
-            label7.Size = new Size(157, 37);
+            label7.Size = new Size(193, 46);
             label7.TabIndex = 9;
             label7.Text = "Dashboard";
             // 
@@ -66,10 +69,9 @@ namespace QuanLyTiemThuoc.Users
             panel1.Controls.Add(guna2Button1);
             panel1.Controls.Add(chart1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(20, 82);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(23, 109);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1417, 657);
+            panel1.Size = new Size(1619, 876);
             panel1.TabIndex = 10;
             // 
             // guna2Button1
@@ -83,11 +85,10 @@ namespace QuanLyTiemThuoc.Users
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
             guna2Button1.ImageSize = new Size(30, 30);
-            guna2Button1.Location = new Point(1238, 531);
-            guna2Button1.Margin = new Padding(3, 2, 3, 2);
+            guna2Button1.Location = new Point(1415, 708);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button1.Size = new Size(124, 45);
+            guna2Button1.Size = new Size(142, 60);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "Reload";
             guna2Button1.Click += guna2Button1_Click;
@@ -99,8 +100,7 @@ namespace QuanLyTiemThuoc.Users
             chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chart1.Legends.Add(legend1);
-            chart1.Location = new Point(937, 32);
-            chart1.Margin = new Padding(3, 2, 3, 2);
+            chart1.Location = new Point(1071, 43);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Color = Color.FromArgb(255, 128, 128);
@@ -112,17 +112,16 @@ namespace QuanLyTiemThuoc.Users
             series2.Name = "Valid Medicine";
             chart1.Series.Add(series1);
             chart1.Series.Add(series2);
-            chart1.Size = new Size(446, 593);
+            chart1.Size = new Size(510, 791);
             chart1.TabIndex = 1;
             chart1.Text = "chart1";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(62, 32);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(71, 43);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(858, 593);
+            pictureBox1.Size = new Size(981, 791);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -131,19 +130,39 @@ namespace QuanLyTiemThuoc.Users
             // 
             guna2Elipse1.TargetControl = this;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1667, 28);
+            menuStrip1.TabIndex = 11;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolToolStripMenuItem
+            // 
+            toolToolStripMenuItem.Name = "toolToolStripMenuItem";
+            toolToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
+            toolToolStripMenuItem.Size = new Size(52, 24);
+            toolToolStripMenuItem.Text = "Tool";
+            toolToolStripMenuItem.Click += toolToolStripMenuItem_Click;
+            // 
             // US_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(panel1);
             Controls.Add(label7);
-            Margin = new Padding(3, 2, 3, 2);
+            Controls.Add(menuStrip1);
             Name = "US_Dashboard";
-            Size = new Size(1459, 826);
+            Size = new Size(1667, 1101);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +174,7 @@ namespace QuanLyTiemThuoc.Users
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolToolStripMenuItem;
     }
 }

@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(US_BusinessStatistics));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label7 = new Label();
             txtStartDate = new DateTimePicker();
             label2 = new Label();
@@ -51,8 +51,12 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             btnSelect = new Guna.UI2.WinForms.Guna2Button();
+            menuStrip1 = new MenuStrip();
+            applyToolStripMenuItem = new ToolStripMenuItem();
+            searchToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)statisticChart).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label7
@@ -64,6 +68,7 @@
             label7.Size = new Size(307, 46);
             label7.TabIndex = 12;
             label7.Text = "Business Statistics";
+            label7.Click += label7_Click;
             // 
             // txtStartDate
             // 
@@ -106,7 +111,7 @@
             // btnApply
             // 
             btnApply.BorderRadius = 20;
-            btnApply.CustomizableEdges = customizableEdges1;
+            btnApply.CustomizableEdges = customizableEdges9;
             btnApply.DisabledState.BorderColor = Color.DarkGray;
             btnApply.DisabledState.CustomBorderColor = Color.DarkGray;
             btnApply.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -117,7 +122,7 @@
             btnApply.ImageSize = new Size(35, 35);
             btnApply.Location = new Point(537, 155);
             btnApply.Name = "btnApply";
-            btnApply.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnApply.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnApply.Size = new Size(187, 51);
             btnApply.TabIndex = 18;
             btnApply.Text = "Apply";
@@ -126,20 +131,20 @@
             // statisticChart
             // 
             statisticChart.BackColor = SystemColors.Control;
-            chartArea1.Name = "ChartArea1";
-            statisticChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            statisticChart.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            statisticChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            statisticChart.Legends.Add(legend3);
             statisticChart.Location = new Point(756, 263);
             statisticChart.Name = "statisticChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Total Price";
-            statisticChart.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Total Price";
+            statisticChart.Series.Add(series3);
             statisticChart.Size = new Size(851, 653);
             statisticChart.TabIndex = 19;
-            title1.Name = "Statistic Chart";
-            statisticChart.Titles.Add(title1);
+            title3.Name = "Statistic Chart";
+            statisticChart.Titles.Add(title3);
             // 
             // guna2Elipse1
             // 
@@ -147,26 +152,26 @@
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = Color.White;
+            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             guna2DataGridView1.ColumnHeadersHeight = 45;
             guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.White;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
+            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.Location = new Point(40, 263);
             guna2DataGridView1.Name = "guna2DataGridView1";
@@ -203,7 +208,7 @@
             // btnSelect
             // 
             btnSelect.BorderRadius = 20;
-            btnSelect.CustomizableEdges = customizableEdges3;
+            btnSelect.CustomizableEdges = customizableEdges11;
             btnSelect.DisabledState.BorderColor = Color.DarkGray;
             btnSelect.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSelect.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -214,11 +219,37 @@
             btnSelect.Image = (Image)resources.GetObject("btnSelect.Image");
             btnSelect.Location = new Point(53, 959);
             btnSelect.Name = "btnSelect";
-            btnSelect.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnSelect.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnSelect.Size = new Size(184, 56);
             btnSelect.TabIndex = 21;
             btnSelect.Text = "Select";
             btnSelect.Click += btnSelect_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { applyToolStripMenuItem, searchToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1667, 28);
+            menuStrip1.TabIndex = 22;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // applyToolStripMenuItem
+            // 
+            applyToolStripMenuItem.Name = "applyToolStripMenuItem";
+            applyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
+            applyToolStripMenuItem.Size = new Size(62, 24);
+            applyToolStripMenuItem.Text = "Apply";
+            applyToolStripMenuItem.Click += applyToolStripMenuItem_Click;
+            // 
+            // searchToolStripMenuItem
+            // 
+            searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            searchToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
+            searchToolStripMenuItem.Size = new Size(67, 24);
+            searchToolStripMenuItem.Text = "Search";
+            searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
             // 
             // US_BusinessStatistics
             // 
@@ -234,10 +265,13 @@
             Controls.Add(label2);
             Controls.Add(txtStartDate);
             Controls.Add(label7);
+            Controls.Add(menuStrip1);
             Name = "US_BusinessStatistics";
             Size = new Size(1667, 1102);
             ((System.ComponentModel.ISupportInitialize)statisticChart).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,5 +288,8 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button btnSelect;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem applyToolStripMenuItem;
+        private ToolStripMenuItem searchToolStripMenuItem;
     }
 }
