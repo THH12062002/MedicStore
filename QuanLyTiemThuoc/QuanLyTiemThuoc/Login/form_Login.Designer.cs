@@ -50,6 +50,7 @@
             txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             label3 = new Label();
+            statusStrip1 = new StatusStrip();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -177,6 +178,8 @@
             txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtUsername.Size = new Size(344, 50);
             txtUsername.TabIndex = 0;
+            txtUsername.Enter += txtUsername_Enter;
+            txtUsername.Leave += txtUsername_Leave;
             // 
             // txtPassword
             // 
@@ -199,7 +202,9 @@
             txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtPassword.Size = new Size(344, 50);
             txtPassword.TabIndex = 1;
+            txtPassword.Enter += txtPassword_Enter;
             txtPassword.KeyPress += txtPassword_KeyPress;
+            txtPassword.Leave += txtPassword_Leave;
             // 
             // label3
             // 
@@ -211,12 +216,22 @@
             label3.TabIndex = 11;
             label3.Text = "Password";
             // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Location = new Point(0, 746);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1380, 22);
+            statusStrip1.TabIndex = 12;
+            statusStrip1.Text = "statusStrip1";
+            // 
             // form_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1380, 768);
+            Controls.Add(statusStrip1);
             Controls.Add(label3);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
@@ -253,5 +268,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Label label3;
+        private StatusStrip statusStrip1;
     }
 }

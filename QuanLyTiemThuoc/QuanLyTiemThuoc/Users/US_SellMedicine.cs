@@ -27,6 +27,7 @@ namespace QuanLyTiemThuoc.Users
             medicBUS = new MedicBUS();
             categoryBUS = new CategoryBUS();
             discountBUS = new DiscountBUS();
+            saleBUS = new SaleBUS();  
             saleDTO = new SaleDTO();
             saleDetailBUS = new SaleDetailBUS();
             saleDetailDTO = new SaleDetailDTO();

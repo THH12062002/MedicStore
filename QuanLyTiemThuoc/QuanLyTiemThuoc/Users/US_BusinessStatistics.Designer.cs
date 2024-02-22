@@ -67,7 +67,8 @@
             // 
             // txtStartDate
             // 
-            txtStartDate.Format = DateTimePickerFormat.Short;
+            txtStartDate.CustomFormat = "dd/MM/yyyy";
+            txtStartDate.Format = DateTimePickerFormat.Custom;
             txtStartDate.Location = new Point(99, 179);
             txtStartDate.Name = "txtStartDate";
             txtStartDate.Size = new Size(149, 27);
@@ -95,7 +96,8 @@
             // 
             // txtEndDate
             // 
-            txtEndDate.Format = DateTimePickerFormat.Short;
+            txtEndDate.CustomFormat = "dd/MM/yyyy";
+            txtEndDate.Format = DateTimePickerFormat.Custom;
             txtEndDate.Location = new Point(301, 179);
             txtEndDate.Name = "txtEndDate";
             txtEndDate.Size = new Size(149, 27);

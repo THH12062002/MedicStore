@@ -15,7 +15,7 @@ namespace QuanLyTiemThuoc
             InitializeComponent();
             usersBUS = new UsersBUS();
             usersDTO = new UsersDTO();
-
+            InitializeStatusStrip();
 
         }
 
@@ -29,11 +29,31 @@ namespace QuanLyTiemThuoc
             PerformLogin();
         }
 
+        private void InitializeStatusStrip()
+        {
+            // Tạo ToolStripStatusLabel cho Username
+            ToolStripStatusLabel usernameStatusLabel = new ToolStripStatusLabel("Enter your username");
+            statusStrip1.Items.Add(usernameStatusLabel);
+
+            // Tạo ToolStripStatusLabel cho Password
+            ToolStripStatusLabel passwordStatusLabel = new ToolStripStatusLabel("Enter your password");
+            statusStrip1.Items.Add(passwordStatusLabel);
+
+            // Gắn ToolStripStatusLabel cho TextBox tương ứng
+            txtUsername.Tag = usernameStatusLabel;
+            txtPassword.Tag = passwordStatusLabel;
+        }
+
+        private void UpdateStatusLabel(ToolStripStatusLabel label, string message, bool isError = false)
+        {
+            label.Text = message;
+            label.ForeColor = isError ? System.Drawing.Color.Red : System.Drawing.Color.Black;
+        }
+
         private void PerformLogin()
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-
 
             // Sử dụng UsersBUS để xác thực người dùng
             bool isAuthenticated = usersBUS.AuthenticateUser(username, password);
@@ -67,7 +87,8 @@ namespace QuanLyTiemThuoc
             }
             else
             {
-                MessageBox.Show("Sai thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UpdateStatusLabel((ToolStripStatusLabel)txtUsername.Tag, "Incorrect username!", true);
+                UpdateStatusLabel((ToolStripStatusLabel)txtPassword.Tag, "Incorrect password!", true);
             }
         }
 
@@ -84,6 +105,28 @@ namespace QuanLyTiemThuoc
         private void form_Login_Load(object sender, EventArgs e)
         {
             txtUsername.Focus();
+        }
+
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            UpdateStatusLabel((ToolStripStatusLabel)txtUsername.Tag, "Enter your username");
+            UpdateStatusLabel((ToolStripStatusLabel)txtPassword.Tag, "");
+        }
+
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            UpdateStatusLabel((ToolStripStatusLabel)txtUsername.Tag, "");   
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            UpdateStatusLabel((ToolStripStatusLabel)txtPassword.Tag, "");
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            UpdateStatusLabel((ToolStripStatusLabel)txtUsername.Tag, "");
+            UpdateStatusLabel((ToolStripStatusLabel)txtPassword.Tag, "Enter your password");
         }
     }
 }
