@@ -70,5 +70,18 @@ namespace QuanLyTiemThuoc.BUS
                 return 0; // Hoặc trả về giá trị mặc định khác tùy thuộc vào yêu cầu của bạn
             }
         }
+        public List<SaleDTO> GetAllSalesByDate(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                return saleDAO.GetAllSalesByDate(startDate, endDate);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in SaleBUS.GetAllSalesByDate: {ex.Message}");
+                // Xử lý các ngoại lệ nếu cần
+                return new List<SaleDTO>(); // Hoặc trả về giá trị mặc định khác tùy thuộc vào yêu cầu của bạn
+            }
+        }
     }
 }

@@ -36,6 +36,34 @@ namespace QuanLyTiemThuoc.DAO
             return sales;
         }
 
+        public List<SaleDTO> GetAllSalesByDate(DateTime startDate, DateTime endDate)
+        {
+            DateTime SD = startDate.Date;
+            DateTime ED = endDate.Date;
+            string query = "select SaleID, SaleDate, TotalAmount, Users.Name  from Sale join Users on SellerAccountID = Users.Id  where SaleDate between @StartDate and @EndDate";
+            SqlParameter[] parameter =
+                 {
+                    new SqlParameter("@StartDate", SD),
+                    new SqlParameter("@EndDate", ED),
+                };
+            DataTable dataTable = dataAccessHelper.ExecuteSelectQuery(query, parameter);
+            List<SaleDTO> sales = new List<SaleDTO>();
+            foreach (DataRow row in dataTable.Rows)
+            {
+                SaleDTO sale = new SaleDTO
+                {
+                    SaleID= Convert.ToInt32(row["SaleID"]),
+                    SaleDate = Convert.ToDateTime(row["SaleDate"]),
+                    TotalAmount = Convert.ToDecimal(row["TotalAmount"]),
+                    SellerAccountName = row["Name"].ToString()
+                };
+
+                sales.Add(sale);
+
+            }
+            return sales;
+        }
+
         public bool AddSale(decimal totalAmount, int sellerAccountID)
         {
             try

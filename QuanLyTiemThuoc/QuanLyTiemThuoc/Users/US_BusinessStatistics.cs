@@ -1,4 +1,5 @@
 ﻿using QuanLyTiemThuoc.BUS;
+using QuanLyTiemThuoc.DTO;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyTiemThuoc.Users
@@ -6,10 +7,12 @@ namespace QuanLyTiemThuoc.Users
     public partial class US_BusinessStatistics : UserControl
     {
         private SaleBUS saleBUS;
+        private SaleDTO saleDTO;
         public US_BusinessStatistics()
         {
             InitializeComponent();
             saleBUS = new SaleBUS();
+            saleDTO = new SaleDTO();
         }
 
         private void btnApply_Click(object sender, EventArgs e)
@@ -63,6 +66,8 @@ namespace QuanLyTiemThuoc.Users
                     statisticChart.Series[currentDate.ToString("dd-MM-yyyy")].IsValueShownAsLabel = true;
                 }
                 statisticChart.Visible = true;
+                var oder = saleBUS.GetAllSalesByDate(txtStartDate.Value, txtEndDate.Value);
+                guna2DataGridView1.DataSource = oder;
             }
             else
             {
@@ -75,5 +80,18 @@ namespace QuanLyTiemThuoc.Users
 
         }
 
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (guna2DataGridView1.Columns.Contains("SellerAccountID"))
+            {
+                guna2DataGridView1.Columns.Remove("SellerAccountID");
+            }
+
+        }
     }
 }

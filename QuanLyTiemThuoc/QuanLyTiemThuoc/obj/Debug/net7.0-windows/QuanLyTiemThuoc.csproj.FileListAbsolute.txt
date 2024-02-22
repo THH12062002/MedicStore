@@ -367,3 +367,4 @@ D:\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\refint\Qu
 D:\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.pdb
 D:\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.genruntimeconfig.cache
 D:\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\ref\QuanLyTiemThuoc.dll
+D:\Sv_nam_4\PhatTrienPhanMemUngDung\MedicStore\QuanLyTiemThuoc\QuanLyTiemThuoc\obj\Debug\net7.0-windows\QuanLyTiemThuoc.Users.Orders.resources
