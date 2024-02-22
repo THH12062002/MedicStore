@@ -177,7 +177,6 @@
             txtUnitPrice.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtUnitPrice.Size = new Size(350, 34);
             txtUnitPrice.TabIndex = 43;
-            txtUnitPrice.TextChanged += txtUnitPrice_TextChanged;
             // 
             // txtQuantity
             // 
@@ -313,7 +312,6 @@
             txtTotalPrice.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtTotalPrice.Size = new Size(350, 34);
             txtTotalPrice.TabIndex = 46;
-            txtTotalPrice.TextChanged += txtTotalPrice_TextChanged;
             // 
             // label2
             // 

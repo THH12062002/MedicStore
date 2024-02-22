@@ -246,6 +246,10 @@ namespace QuanLyTiemThuoc.Users
             {
                 if (e.Node.Parent == null)
                 {
+                    ImageList imageList = new ImageList();
+                    lvMedicine.LargeImageList = imageList;
+                    lvMedicine.SmallImageList = imageList;
+
                     int categoryId = Convert.ToInt32(e.Node.Tag);
 
                     // Lấy danh sách các thuốc thuộc Category đã chọn
@@ -259,6 +263,10 @@ namespace QuanLyTiemThuoc.Users
                         // Tạo một ListViewItem mới cho mỗi dòng và chỉ đặt giá trị MedicId vào Text
                         ListViewItem item = new ListViewItem(medicine.MedicId);
 
+                        string imagePath = "D:\\Sv_nam_4\\PhatTrienPhanMemUngDung\\MedicStore\\QuanLyTiemThuoc\\QuanLyTiemThuoc\\Asset\\image_pharmacy\\medicine2.jpg";
+                        Image medicineImage = Image.FromFile(imagePath);
+                        imageList.Images.Add("defaultImageKey", medicineImage);
+                        item.ImageKey = "defaultImageKey";
                         // Thêm ListViewItem vào ListView
                         lvMedicine.Items.Add(item);
                     }
@@ -457,11 +465,6 @@ namespace QuanLyTiemThuoc.Users
             }
         }
 
-        private void txtUnitPrice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string discountCode = txtDiscountCode.Text;
@@ -495,12 +498,6 @@ namespace QuanLyTiemThuoc.Users
             {
                 MessageBox.Show("Giá trị không đủ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        private void txtTotalPrice_TextChanged(object sender, EventArgs e)
-        {
-            
-
         }
     }
 }
