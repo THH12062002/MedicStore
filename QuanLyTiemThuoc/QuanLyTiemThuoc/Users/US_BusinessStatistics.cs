@@ -16,26 +16,33 @@ namespace QuanLyTiemThuoc.Users
             saleBUS = new SaleBUS();
             saleDTO = new SaleDTO();
             saleDetailDTO = new SaleDetailDTO();
-            UpdateChart();
+            guna2DataGridView1.CellFormatting += Guna2DataGridView1_CellFormatting;
             txtStartDate.Value = DateTime.Now.Date;
+            txtEndDate.Value = DateTime.Now.Date;
         }
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            UpdateChart();
+            UpdateChart(txtStartDate.Value, txtEndDate.Value);
         }
 
-        private void UpdateChart()
+        private void Guna2DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            // Lấy ngày bắt đầu và ngày kết thúc từ DateTimePicker
-            DateTime startDate = txtStartDate.Value;
-            DateTime endDate = txtEndDate.Value;
+            // Kiểm tra nếu đang xử lý cột TotalAmount và giá trị không phải là null
+            if (guna2DataGridView1.Columns[e.ColumnIndex].Name == "TotalAmount" && e.Value != null)
+            {
+                // Định dạng giá trị của cột TotalAmount thành chuỗi tiền tệ
+                e.Value = string.Format("{0:C}", e.Value);
+                e.FormattingApplied = true; // Đánh dấu là đã áp dụng định dạng
+            }
+        }
 
+        private void UpdateChart(DateTime startDate, DateTime endDate)
+        {
             statisticChart.Series.Clear();
             if (endDate == startDate)
             {
                 DateTime currentDate = startDate;
-                // Tạo một series mới cho mỗi ngày
                 Series daySeries = new Series(currentDate.ToString("dd-MM-yyyy"));
                 daySeries.ChartType = SeriesChartType.Column;
 
@@ -43,8 +50,15 @@ namespace QuanLyTiemThuoc.Users
                 decimal dailyRevenue = saleBUS.GetTotalRevenueByDate(currentDate);
 
                 // Thêm điểm dữ liệu vào series mới
-                daySeries.Points.AddXY(currentDate.ToString("dd-MM-yyyy"), dailyRevenue);
+                DataPoint dataPoint = new DataPoint();
+
+                dataPoint.SetValueXY(currentDate.ToString("dd-MM-yyyy"), Convert.ToDouble(dailyRevenue));
+                
+                // Định dạng giá trị của DataPoint thành chuỗi tiền tệ
+                dataPoint.Label = dailyRevenue.ToString("C");
+
                 // Thêm series mới vào Chart
+                daySeries.Points.Add(dataPoint);
                 statisticChart.Series.Add(daySeries);
                 statisticChart.ChartAreas[0].AxisX.Interval = 1;
                 statisticChart.Series[currentDate.ToString("dd-MM-yyyy")].IsValueShownAsLabel = true;
@@ -64,9 +78,14 @@ namespace QuanLyTiemThuoc.Users
                     decimal dailyRevenue = saleBUS.GetTotalRevenueByDate(currentDate);
 
                     // Thêm điểm dữ liệu vào series mới
-                    daySeries.Points.AddXY(currentDate.ToString("dd-MM-yyyy"), dailyRevenue);
+                    DataPoint dataPoint = new DataPoint();
+                    dataPoint.SetValueXY(currentDate.ToString("dd-MM-yyyy"), Convert.ToDouble(dailyRevenue));
+
+                    // Định dạng giá trị của DataPoint thành chuỗi tiền tệ
+                    dataPoint.Label = dailyRevenue.ToString("C");
 
                     // Thêm series mới vào Chart
+                    daySeries.Points.Add(dataPoint);
                     statisticChart.Series.Add(daySeries);
                     statisticChart.ChartAreas[0].AxisX.Interval = 1;
                     statisticChart.Series[currentDate.ToString("dd-MM-yyyy")].IsValueShownAsLabel = true;
@@ -125,7 +144,7 @@ namespace QuanLyTiemThuoc.Users
 
         private void applyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UpdateChart();
+            UpdateChart(txtStartDate.Value, txtEndDate.Value);
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -159,6 +178,28 @@ namespace QuanLyTiemThuoc.Users
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+        private void ClearChart()
+        {
+            // Xóa tất cả các series trên biểu đồ
+            statisticChart.Series.Clear();
+
+            // Xóa tất cả các dữ liệu trên biểu đồ
+            foreach (var chartArea in statisticChart.ChartAreas)
+            {
+                chartArea.AxisX.Interval = 0; // Đặt Interval về 0 để xóa các điểm dữ liệu trên trục X
+                chartArea.AxisY.Interval = 0; // Đặt Interval về 0 để xóa các điểm dữ liệu trên trục Y
+                chartArea.AxisX.CustomLabels.Clear(); // Xóa các nhãn tùy chỉnh trên trục X
+                chartArea.AxisY.CustomLabels.Clear(); // Xóa các nhãn tùy chỉnh trên trục Y
+            }
+        }
+        private void US_BusinessStatistics_Load(object sender, EventArgs e)
+        {
+            txtStartDate.Value = DateTime.Now.Date;
+            txtEndDate.Value = DateTime.Now.Date;
+            DateTime loadDate = txtStartDate.Value.AddDays(-1);
+            UpdateChart(loadDate, txtEndDate.Value);
+            ClearChart();
         }
     }
 }

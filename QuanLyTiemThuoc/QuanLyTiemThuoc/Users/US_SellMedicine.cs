@@ -421,6 +421,7 @@ namespace QuanLyTiemThuoc.Users
             long.TryParse(txtUnitPrice.Text, out long unitPrice);
             long.TryParse(txtQuantity.Text, out long quantity);
             decimal totalPrice = CalculateTotalPrice(unitPrice, quantity, 0);
+
             List<DiscountDTO> discountList = discountBUS.GetDiscountsBelowTotalSaleAmount(totalPrice);
             if (discountList != null && discountList.Count > 0)
             {
@@ -468,7 +469,22 @@ namespace QuanLyTiemThuoc.Users
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            // Lấy mã giảm giá từ TextBox
             string discountCode = txtDiscountCode.Text;
+
+            // Kiểm tra xem có dòng nào trong guna2DataGridView1 có giá trị trong cột DiscountPercentage hay không
+            bool hasDiscountPercentage = guna2DataGridView1.Rows
+                .OfType<DataGridViewRow>()
+                .Any(row => row.Cells["DiscountPercentage"].Value != null && !string.IsNullOrEmpty(row.Cells["DiscountPercentage"].Value.ToString()));
+
+            // Nếu có dòng nào có giá trị trong cột DiscountPercentage, thông báo và clear txtDiscountCode
+            if (hasDiscountPercentage)
+            {
+                MessageBox.Show("Không thể áp dụng mã giảm giá khi có các sản phẩm đã có giảm giá.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtDiscountCode.Text = string.Empty;
+                txtDiscountPercentage.Text = Convert.ToDecimal(0).ToString();
+                return;
+            }
             DiscountDTO discountList = discountBUS.GetDiscountByCode(discountCode);
             long.TryParse(txtUnitPrice.Text, out long unitPrice);
             int.TryParse(txtQuantity.Text, out int quantity);

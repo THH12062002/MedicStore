@@ -51,10 +51,9 @@ namespace QuanLyTiemThuoc.DAO
             try
             {
                 // Query to get sale details based on SaleID
-                string query = @"SELECT M.MName, C.CategoryName, SD.QuantitySold, SD.SalePrice, D.DiscountPercentage, S.TotalAmount
+                string query = @"SELECT M.MName, C.CategoryName, SD.QuantitySold,  D.DiscountPercentage, SD.SalePrice
                                  FROM SaleDetail SD
                                  JOIN Medic M ON SD.MedicineID = M.Id
-                                 JOIN Sale S ON SD.SaleID = S.SaleID
                                  JOIN Discount D ON SD.DiscountID = D.DiscountID
                                  JOIN Category C ON M.CategoryID = C.CategoryID
                                  WHERE SD.SaleID = @SaleID";
@@ -79,9 +78,8 @@ namespace QuanLyTiemThuoc.DAO
                         medicName = row["MName"].ToString(),
                         CategoryName = row["CategoryName"].ToString(),
                         quantitySold = Convert.ToInt32(row["QuantitySold"]),
-                        totalPrice = Convert.ToDecimal(row["SalePrice"]),
                         discountPercentage = Convert.ToDecimal(row["DiscountPercentage"]),
-                        totalAmount = Convert.ToDecimal(row["TotalAmount"])
+                        totalPrice = Convert.ToDecimal(row["SalePrice"]),
                     };
 
                     saleDetails.Add(saleDetail);

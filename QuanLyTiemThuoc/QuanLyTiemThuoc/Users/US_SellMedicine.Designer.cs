@@ -99,9 +99,9 @@
             menuStrip1 = new MenuStrip();
             addToCartToolStripMenuItem = new ToolStripMenuItem();
             removeToolStripMenuItem = new ToolStripMenuItem();
+            resetToolStripMenuItem = new ToolStripMenuItem();
             paymentAndPrintToolStripMenuItem = new ToolStripMenuItem();
             searchToolStripMenuItem = new ToolStripMenuItem();
-            resetToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -110,7 +110,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(14, 11);
+            label7.Location = new Point(14, 28);
             label7.Name = "label7";
             label7.Size = new Size(233, 46);
             label7.TabIndex = 13;
@@ -129,7 +129,7 @@
             btnReset.HoverState.FillColor = Color.Gray;
             btnReset.Image = (Image)resources.GetObject("btnReset.Image");
             btnReset.ImageSize = new Size(40, 40);
-            btnReset.Location = new Point(250, 11);
+            btnReset.Location = new Point(250, 28);
             btnReset.Name = "btnReset";
             btnReset.PressedColor = Color.White;
             btnReset.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -380,6 +380,7 @@
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.Location = new Point(366, 579);
             guna2DataGridView1.Name = "guna2DataGridView1";
+            guna2DataGridView1.ReadOnly = true;
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
             guna2DataGridView1.RowTemplate.Height = 29;
@@ -398,7 +399,7 @@
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 45;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            guna2DataGridView1.ThemeStyle.ReadOnly = true;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -412,48 +413,56 @@
             MedicineID.HeaderText = "Medicine ID";
             MedicineID.MinimumWidth = 6;
             MedicineID.Name = "MedicineID";
+            MedicineID.ReadOnly = true;
             // 
             // MedicineName
             // 
             MedicineName.HeaderText = "Name";
             MedicineName.MinimumWidth = 6;
             MedicineName.Name = "MedicineName";
+            MedicineName.ReadOnly = true;
             // 
             // ExpirationDate
             // 
             ExpirationDate.HeaderText = "Expiration Date";
             ExpirationDate.MinimumWidth = 6;
             ExpirationDate.Name = "ExpirationDate";
+            ExpirationDate.ReadOnly = true;
             // 
             // UnitPrice
             // 
             UnitPrice.HeaderText = "Unit Price";
             UnitPrice.MinimumWidth = 6;
             UnitPrice.Name = "UnitPrice";
+            UnitPrice.ReadOnly = true;
             // 
             // Quantity
             // 
             Quantity.HeaderText = "Quantity";
             Quantity.MinimumWidth = 6;
             Quantity.Name = "Quantity";
+            Quantity.ReadOnly = true;
             // 
             // DiscountCode
             // 
             DiscountCode.HeaderText = "Discount Code";
             DiscountCode.MinimumWidth = 6;
             DiscountCode.Name = "DiscountCode";
+            DiscountCode.ReadOnly = true;
             // 
             // DiscountPercentage
             // 
             DiscountPercentage.HeaderText = "Discount Percentage";
             DiscountPercentage.MinimumWidth = 6;
             DiscountPercentage.Name = "DiscountPercentage";
+            DiscountPercentage.ReadOnly = true;
             // 
             // TotalPrice
             // 
             TotalPrice.HeaderText = "Total Price";
             TotalPrice.MinimumWidth = 6;
             TotalPrice.Name = "TotalPrice";
+            TotalPrice.ReadOnly = true;
             // 
             // btnRemove
             // 
@@ -647,9 +656,17 @@
             // 
             removeToolStripMenuItem.Name = "removeToolStripMenuItem";
             removeToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Delete;
-            removeToolStripMenuItem.Size = new Size(224, 26);
+            removeToolStripMenuItem.Size = new Size(211, 26);
             removeToolStripMenuItem.Text = "Remove";
             removeToolStripMenuItem.Click += removeToolStripMenuItem_Click;
+            // 
+            // resetToolStripMenuItem
+            // 
+            resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            resetToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
+            resetToolStripMenuItem.Size = new Size(211, 26);
+            resetToolStripMenuItem.Text = "Reset";
+            resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // paymentAndPrintToolStripMenuItem
             // 
@@ -666,14 +683,6 @@
             searchToolStripMenuItem.Size = new Size(67, 24);
             searchToolStripMenuItem.Text = "Search";
             searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
-            // 
-            // resetToolStripMenuItem
-            // 
-            resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            resetToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
-            resetToolStripMenuItem.Size = new Size(224, 26);
-            resetToolStripMenuItem.Text = "Reset";
-            resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // US_SellMedicine
             // 

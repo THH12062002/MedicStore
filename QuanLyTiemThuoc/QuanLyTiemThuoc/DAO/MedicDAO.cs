@@ -304,7 +304,7 @@ namespace QuanLyTiemThuoc.DAO
             {
                 string query = "SELECT MedicId, MName, MDate, EDate, Quantity, PerUnit, BatchID, CategoryID, Description, Status " +
                                "FROM Medic " +
-                               "WHERE CategoryID = @CategoryId";
+                               "WHERE CategoryID = @CategoryId And Status = N'Còn hạn'";
 
                 SqlParameter[] parameters = {
             new SqlParameter("@CategoryId", categoryId)

@@ -57,7 +57,7 @@ namespace QuanLyTiemThuoc.Users
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(14, 11);
+            label7.Location = new Point(3, 28);
             label7.Name = "label7";
             label7.Size = new Size(193, 46);
             label7.TabIndex = 9;
@@ -136,16 +136,17 @@ namespace QuanLyTiemThuoc.Users
             menuStrip1.Items.AddRange(new ToolStripItem[] { toolToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1667, 28);
+            menuStrip1.Size = new Size(1667, 31);
             menuStrip1.TabIndex = 11;
             menuStrip1.Text = "menuStrip1";
             // 
             // toolToolStripMenuItem
             // 
+            toolToolStripMenuItem.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             toolToolStripMenuItem.Name = "toolToolStripMenuItem";
             toolToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
-            toolToolStripMenuItem.Size = new Size(52, 24);
-            toolToolStripMenuItem.Text = "Tool";
+            toolToolStripMenuItem.Size = new Size(76, 27);
+            toolToolStripMenuItem.Text = "Reload";
             toolToolStripMenuItem.Click += toolToolStripMenuItem_Click;
             // 
             // US_Dashboard

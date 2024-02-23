@@ -11,9 +11,9 @@ namespace QuanLyTiemThuoc.DTO
         public string medicName { get; set; }
         public string CategoryName { get; set; }
         public long quantitySold { get; set; }
-        public decimal totalPrice { get; set; }
+
         public decimal discountPercentage { get; set; }
-        public decimal totalAmount { get; set; }
+        public decimal totalPrice { get; set; }
 
     }
 }
